@@ -888,7 +888,7 @@ contractTest('CONTRACT-021 keeps ready video presentations bounded with a thumbn
       assert.ok(poster, `${video.id} static poster remains available`);
       assert.ok(parseFloat(poster.config?.styles?.width) <= 120 && parseFloat(poster.config.styles.height) <= 160, `${video.id} poster must be a compact thumbnail`);
       assert.equal(poster.config.styles.objectFit, 'contain');
-      assert.equal(figure.config?.styles?.gridTemplateColumns, '96px minmax(0, 1fr)', `${video.id} thumbnail beside load label`);
+      assert.equal(figure.config?.styles?.display, 'grid', `${video.id} ordered media presentation`);
     }
   }
 });
@@ -900,4 +900,68 @@ contractTest('CONTRACT-022 gives every supplied black logo a light brand surface
     assert.equal(logo.config?.styles?.backgroundColor, 'var(--ank-bgColor)', `${logo.id} supplied black artwork must not disappear on green`);
     assert.equal(logo.config.styles.objectFit, 'contain');
   }
+});
+
+for (const [number, pageId, shape, width, height] of [
+  ['023', 'default', 'landscape', 1280, 720],
+  ['024', 'mayoreo', 'portrait', 720, 1280],
+]) {
+  contractTest(`CONTRACT-${number} gives the ${shape} player and caption full-width rows outside the thumbnail column`, () => {
+    const components = pageComponents(pageId);
+    const video = components.find((component) => component.config?.tag === 'video');
+    const figure = components.find((component) => component.config?.tag === 'figure' && component.config?.components?.includes(video.id));
+    const ordered = figure.config.components.map((id) => components.find((component) => component.id === id));
+    const poster = ordered.find((component) => /-poster\.webp$/.test(component.config?.src ?? ''));
+    const caption = ordered.find((component) => component.config?.tag === 'figcaption');
+
+    // generic-media is the grid item; config.styles belongs to its inner video.
+    // An inner gridColumn cannot span the host out of a 96px thumbnail track.
+    assert.equal(figure.config.styles.gridTemplateColumns, 'minmax(0, 1fr)', `${pageId} media hosts need one full-width track`);
+    assert.equal(figure.config.styles.width, '100%');
+    assert.equal(figure.config.styles.minWidth, '0');
+    assert.equal(video.config.styles.width, '100%');
+    assert.equal(video.config.styles.maxWidth, '960px');
+    assert.equal(video.config.styles.height, 'clamp(320px, 40vw, 480px)');
+    assert.equal(video.config.styles.objectFit, 'contain', `${shape} footage must retain its proportions`);
+    assert.equal(video.config.controls, true);
+    assert.equal(video.config.autoplay, false);
+    assert.equal(poster.config.width, width, `${shape} source preview width`);
+    assert.equal(poster.config.height, height, `${shape} source preview height`);
+    assert.equal(poster.config.styles.width, '96px');
+    assert.equal(poster.config.styles.height, '128px');
+    assert.ok(ordered.indexOf(video) > ordered.indexOf(poster), 'preview precedes full-width player');
+    assert.equal(ordered.at(-1), caption, 'description occupies its own final row');
+    for (const child of ordered) {
+      assert.equal(child.config?.styles?.gridColumn, undefined, `${child.id} must not claim to position a wrapper from its inner element`);
+      assert.equal(child.config?.styles?.gridRow, undefined, `${child.id} follows semantic source order`);
+    }
+  });
+}
+
+contractTest('CONTRACT-025 fits all five primary labels within the measured 375px navigation budget', () => {
+  const shared = sharedComponents();
+  const byId = new Map(shared.map((component) => [component.id, component]));
+  const header = shared.find((component) => component.config?.tag === 'header');
+  const headerIds = reachableComponentIds(header.id, byId);
+  const nav = shared.find((component) => headerIds.has(component.id) && component.config?.tag === 'nav');
+  const links = nav.config.components.map((id) => byId.get(id));
+  // Browser baseline: link widths 54.797, 53.234, 75.016, 77.328, 90.359
+  // with 6px padding on each side. Keep the measured 14px type; reclaim padding.
+  const measuredTextWidths = new Map([
+    ['/', 42.796875], ['/menu', 41.234375], ['/impacto', 63.015625],
+    ['/mayoreo', 65.328125], ['/preguntas', 78.359375],
+  ]);
+  const available = 375 - 2 * parseFloat(header.config.styles.paddingInline);
+  const required = links.reduce((sum, link) => {
+    const styles = link.config.styles;
+    assert.equal(styles.fontSize, '14px', `${link.id} keeps the measured readable type`);
+    assert.ok(parseFloat(styles.minHeight) >= 44, `${link.id} usable target height`);
+    const textWidth = measuredTextWidths.get(link.config.href);
+    assert.ok(Number.isFinite(textWidth), `${link.id} measured primary route`);
+    return sum + Math.max(parseFloat(styles.minWidth) || 0, textWidth + 2 * parseFloat(styles.paddingInline));
+  }, 0) + (links.length - 1) * parseFloat(nav.config.styles.gap);
+  assert.ok(required <= available, `primary labels need ${required.toFixed(3)}px but only ${available}px are available`);
+  assert.equal(nav.config.styles.flexWrap, 'wrap', 'narrower viewports must reflow labels rather than clip them');
+  assert.equal(nav.config.styles.overflowX, 'visible', 'keyboard users must not depend on an undiscoverable horizontal scroller');
+  for (const link of links) assert.ok(parseFloat(link.config.styles.minWidth) >= 44, `${link.id} usable target width`);
 });

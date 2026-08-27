@@ -137,7 +137,8 @@
           "gap": "0",
           "minHeight": "44px",
           "paddingBottom": "0",
-          "overflowX": "auto"
+          "overflowX": "visible",
+          "flexWrap": "wrap"
         }
       }
     },
@@ -159,8 +160,9 @@
           "alignSelf": "start",
           "justifySelf": "start",
           "fontSize": "14px",
-          "paddingInline": "6px",
-          "whiteSpace": "nowrap"
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
         }
       }
     },
@@ -182,8 +184,9 @@
           "alignSelf": "start",
           "justifySelf": "start",
           "fontSize": "14px",
-          "paddingInline": "6px",
-          "whiteSpace": "nowrap"
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
         }
       }
     },
@@ -205,8 +208,9 @@
           "alignSelf": "start",
           "justifySelf": "start",
           "fontSize": "14px",
-          "paddingInline": "6px",
-          "whiteSpace": "nowrap"
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
         }
       }
     },
@@ -228,8 +232,9 @@
           "alignSelf": "start",
           "justifySelf": "start",
           "fontSize": "14px",
-          "paddingInline": "6px",
-          "whiteSpace": "nowrap"
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
         }
       }
     },
@@ -251,8 +256,9 @@
           "alignSelf": "start",
           "justifySelf": "start",
           "fontSize": "14px",
-          "paddingInline": "6px",
-          "whiteSpace": "nowrap"
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
         }
       }
     },

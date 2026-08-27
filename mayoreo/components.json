@@ -505,7 +505,7 @@
         ],
         "styles": {
           "display": "grid",
-          "gridTemplateColumns": "96px minmax(0, 1fr)",
+          "gridTemplateColumns": "minmax(0, 1fr)",
           "gap": "16px",
           "alignItems": "center",
           "margin": "0",
@@ -528,9 +528,7 @@
           "maxWidth": "960px",
           "height": "clamp(320px, 40vw, 480px)",
           "maxHeight": "480px",
-          "objectFit": "contain",
-          "gridColumn": "1 / -1",
-          "justifySelf": "start"
+          "objectFit": "contain"
         },
         "controls": true,
         "preload": "none",
@@ -547,7 +545,6 @@
         "text": "Descripción completa del video sin audio: recorrido vertical por recipientes con piña, pepino, hojas verdes y jengibre. No contiene narración ni información adicional.",
         "classes": "figureCaption",
         "styles": {
-          "gridColumn": "1 / -1",
           "margin": "0",
           "maxWidth": "72ch"
         }
@@ -672,9 +669,7 @@
           "width": "96px",
           "height": "128px",
           "maxWidth": "100%",
-          "objectFit": "contain",
-          "gridColumn": "1",
-          "gridRow": "1"
+          "objectFit": "contain"
         }
       }
     },
@@ -686,8 +681,6 @@
         "text": "Reproducción opcional: usa el control Reproducir para cargar el video.",
         "classes": "bodyCopy",
         "styles": {
-          "gridColumn": "2",
-          "gridRow": "1",
           "margin": "0",
           "maxWidth": "48ch"
         }
