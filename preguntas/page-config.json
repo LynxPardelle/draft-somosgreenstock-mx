@@ -15,6 +15,9 @@
     "description": {
       "es": "Resuelve dudas sobre preparación, congelación, fibra, conservación, recolección, entrega en CDMX y la forma actual de pedir Greenstock."
     },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/preguntas?draftDomain=somosgreenstock.mx"
+    },
     "robots": {
       "es": "noindex,nofollow"
     },

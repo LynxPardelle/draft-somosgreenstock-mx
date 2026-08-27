@@ -4,6 +4,7 @@ import test from 'node:test';
 
 const DOMAIN = 'somosgreenstock.mx';
 const CANONICAL_ORIGIN = `https://${DOMAIN}`;
+const TESTING_ORIGIN = 'https://test.zoolandingpage.com.mx';
 const ASSET_PREFIX = `https://assets.zoolandingpage.com.mx/${DOMAIN}/shared/`;
 const INSTAGRAM_DESTINATION = 'instagram.com/greens.tock';
 
@@ -15,6 +16,10 @@ const ROUTES = [
   { path: '/preguntas', pageId: 'preguntas' },
   { path: '/404', pageId: 'not-found' },
 ];
+const TESTING_CANONICALS = new Map(ROUTES.map(({ path, pageId }) => [
+  pageId,
+  `${TESTING_ORIGIN}${path}?draftDomain=${DOMAIN}`,
+]));
 
 const PAGE_IDS = ROUTES.map(({ pageId }) => pageId);
 const COMMERCIAL_PAGE_IDS = PAGE_IDS.filter((pageId) => pageId !== 'not-found');
@@ -518,7 +523,7 @@ contractTest('CONTRACT-008 inventories and renders every supplied client asset',
   }
 });
 
-contractTest('CONTRACT-009 keeps pre-domain SEO unique, social-ready and safely non-indexable', () => {
+contractTest('CONTRACT-009 uses validator-safe testing canonicals while remaining non-indexable', () => {
   const siteSeo = readJson('site-config.json').site?.seo ?? {};
   assert.equal(siteSeo.canonicalOrigin, undefined, 'uncontrolled domain must not be advertised as canonical');
   assert.equal(localizedSpanish(siteSeo.robots), 'noindex,nofollow');
@@ -530,7 +535,13 @@ contractTest('CONTRACT-009 keeps pre-domain SEO unique, social-ready and safely 
     const description = localizedSpanish(seo?.description);
     assert.ok(title.length >= 20, `${pageId} SEO title`);
     assert.ok(description.length >= 70, `${pageId} SEO description`);
-    assert.equal(seo?.canonical, undefined, `${pageId} must not claim an uncontrolled canonical`);
+    const canonical = localizedSpanish(seo?.canonical);
+    assert.equal(canonical, TESTING_CANONICALS.get(pageId), `${pageId} testing canonical`);
+    const canonicalUrl = new URL(canonical);
+    assert.equal(canonicalUrl.origin, TESTING_ORIGIN, `${pageId} canonical host`);
+    assert.equal(canonicalUrl.searchParams.get('draftDomain'), DOMAIN, `${pageId} canonical draft scope`);
+    assert.equal(canonicalUrl.searchParams.size, 1, `${pageId} canonical has only the draft scope`);
+    assert.equal(canonical.includes(CANONICAL_ORIGIN), false, `${pageId} must not claim the uncontrolled domain`);
     assert.equal(seo?.openGraph?.url, undefined, `${pageId} must not claim an uncontrolled Open Graph URL`);
     assert.ok(localizedSpanish(seo?.openGraph?.title), `${pageId} Open Graph title`);
     assert.ok(localizedSpanish(seo?.openGraph?.description), `${pageId} Open Graph description`);
@@ -742,8 +753,7 @@ contractTest('CONTRACT-013 excludes ecommerce, PII forms and invented contact or
   const absoluteUrls = strings.filter((value) => /^https?:\/\//i.test(value));
   for (const value of absoluteUrls) {
     const approved = value === 'https://schema.org'
-      || value === CANONICAL_ORIGIN
-      || value.startsWith(`${CANONICAL_ORIGIN}/`)
+      || new Set(TESTING_CANONICALS.values()).has(value)
       || value.startsWith(ASSET_PREFIX)
       || normalizeInstagramDestination(value) === INSTAGRAM_DESTINATION;
     assert.equal(approved, true, `unapproved external URL: ${value}`);

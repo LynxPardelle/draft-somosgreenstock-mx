@@ -15,6 +15,9 @@
     "description": {
       "es": "Conoce Greenstock: porciones congeladas de frutas y verduras, empacadas al vacío y listas para preparar una bebida de 250 ml en tres pasos."
     },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/?draftDomain=somosgreenstock.mx"
+    },
     "robots": {
       "es": "noindex,nofollow"
     },

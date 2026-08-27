@@ -15,6 +15,9 @@
     "description": {
       "es": "Explora las seis mezclas Greenstock, sus ingredientes y el precio por porción para preparar bebidas prácticas de 250 ml en Ciudad de México."
     },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/menu?draftDomain=somosgreenstock.mx"
+    },
     "robots": {
       "es": "noindex,nofollow"
     },

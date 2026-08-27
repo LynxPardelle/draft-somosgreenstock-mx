@@ -15,6 +15,9 @@
     "description": {
       "es": "Conoce el propósito de Greenstock: facilitar el consumo práctico de frutas y verduras mientras impulsa oportunidades de empleo incluyente."
     },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/impacto?draftDomain=somosgreenstock.mx"
+    },
     "robots": {
       "es": "noindex,nofollow"
     },
