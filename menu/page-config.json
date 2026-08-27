@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "menu",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "menuMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": {
+      "es": "Menú Greenstock | Seis mezclas listas para licuar"
+    },
+    "description": {
+      "es": "Explora las seis mezclas Greenstock, sus ingredientes y el precio por porción para preparar bebidas prácticas de 250 ml en Ciudad de México."
+    },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/menu?draftDomain=somosgreenstock.mx"
+    },
+    "robots": {
+      "es": "noindex,nofollow"
+    },
+    "openGraph": {
+      "type": {
+        "es": "website"
+      },
+      "title": {
+        "es": "Menú Greenstock | Seis mezclas listas para licuar"
+      },
+      "description": {
+        "es": "Verde Detox, Green Fresh, Kale Vibes, Lemon Fit, Mint Pop y Fruit Splash."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-01.webp"
+      }
+    },
+    "twitter": {
+      "card": {
+        "es": "summary_large_image"
+      },
+      "title": {
+        "es": "Menú Greenstock | Seis mezclas listas para licuar"
+      },
+      "description": {
+        "es": "Conoce ingredientes y presentaciones de las seis mezclas Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-01.webp"
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Menú Greenstock",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Verde Detox",
+              "description": "Espinaca, pepino, perejil, nopal, apio y piña.",
+              "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp",
+              "offers": {
+                "@type": "Offer",
+                "price": 40,
+                "priceCurrency": "MXN"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Green Fresh",
+              "description": "Pepino, apio y manzana verde.",
+              "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/green-fresh-01.webp",
+              "offers": {
+                "@type": "Offer",
+                "price": 40,
+                "priceCurrency": "MXN"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Kale Vibes",
+              "description": "Piña, kale y jengibre.",
+              "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/kale-vibes-01.webp",
+              "offers": {
+                "@type": "Offer",
+                "price": 40,
+                "priceCurrency": "MXN"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Product",
+              "name": "Lemon Fit",
+              "description": "Limón, apio y manzana verde.",
+              "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/lemon-fit-01.webp",
+              "offers": {
+                "@type": "Offer",
+                "price": 40,
+                "priceCurrency": "MXN"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Product",
+              "name": "Mint Pop",
+              "description": "Pepino, melón, menta y limón.",
+              "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/mint-pop-01.webp",
+              "offers": {
+                "@type": "Offer",
+                "price": 40,
+                "priceCurrency": "MXN"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Product",
+              "name": "Fruit Splash",
+              "description": "Mango, fresa y espinaca.",
+              "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-01.webp",
+              "offers": {
+                "@type": "Offer",
+                "price": 40,
+                "priceCurrency": "MXN"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

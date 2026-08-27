@@ -1,0 +1,1110 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "default",
+  "components": [
+    {
+      "id": "homeMain",
+      "type": "container",
+      "config": {
+        "id": "main-content",
+        "tag": "main",
+        "classes": "pageMain",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "scrollMarginTop": "128px"
+        },
+        "components": [
+          "homeHero",
+          "homeSteps",
+          "homeCatalog",
+          "homeProcess",
+          "homeImpact",
+          "homeWholesale",
+          "homeQuestions",
+          "homeFinal"
+        ],
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "homeHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "ariaLabelledby": "homeHeroTitle",
+        "classes": "ank-width-100per ank-bg-bgColor",
+        "components": [
+          "homeHeroCopy",
+          "homeHeroMediaFrame"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 420px), 1fr))",
+          "alignItems": "stretch",
+          "width": "100%",
+          "minHeight": "0"
+        }
+      }
+    },
+    {
+      "id": "homeHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-color-titleColor",
+        "components": [
+          "homeBrandAccent",
+          "homeHeroEyebrow",
+          "homeHeroTitle",
+          "homeHeroDescription",
+          "homeHeroActions"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "alignItems": "flex-start",
+          "gap": "12px",
+          "padding": "clamp(24px, 4vw, 64px)",
+          "boxSizing": "border-box",
+          "minWidth": "0",
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "homeHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Frutas y verduras listas para licuar",
+        "classes": "ank-m-0 ank-color-linkColor ank-fontWeight-900 ank-letterSpacing-0_08em ank-textTransform-uppercase",
+        "styles": {
+          "margin": "0",
+          "fontSize": "14px",
+          "lineHeight": "1.35"
+        }
+      }
+    },
+    {
+      "id": "homeHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.title",
+      "config": {
+        "id": "homeHeroTitle",
+        "tag": "h1",
+        "text": "Tu mezcla diaria ya está lista.",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontWeight-900 ank-letterSpacing-MIN0_04em",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "20ch",
+          "fontSize": "clamp(2.2rem, 3.4vw, 4.25rem)",
+          "lineHeight": "1.02"
+        }
+      }
+    },
+    {
+      "id": "homeHeroDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.description",
+      "config": {
+        "tag": "p",
+        "text": "Porciones congeladas y al vacío. Abre, agrega líquido y licúa una bebida de 250 ml.",
+        "classes": "ank-m-0 ank-color-textColor",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "48ch",
+          "fontSize": "clamp(1rem, 1.2vw, 1.125rem)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "homeHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "actionRow",
+        "components": [
+          "homeHeroOrder",
+          "homeHeroMenu"
+        ],
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexWrap": "wrap",
+          "gap": "12px"
+        }
+      }
+    },
+    {
+      "id": "homeHeroOrder",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,page.hero.primary",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pide ahora",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "homeHeroMenu",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.hero.secondary",
+      "config": {
+        "href": "/menu",
+        "text": "Ver menú",
+        "classes": "secondaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
+      }
+    },
+    {
+      "id": "homeHeroMediaFrame",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "ank-bg-secondaryBgColor",
+        "components": [
+          "homeHeroImage"
+        ],
+        "styles": {
+          "margin": "0",
+          "width": "100%",
+          "height": "clamp(240px, 46vw, 640px)",
+          "minHeight": "0",
+          "minWidth": "0",
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "id": "homeHeroImage",
+      "type": "media",
+      "valueInstructions": "set:config.src,var,heroAssets.heroImageUrl;set:config.alt,var,heroAssets.heroImageAlt",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-front-01.webp",
+        "alt": "Porción Greenstock congelada y empacada al vacío, lista para licuar",
+        "width": 1200,
+        "height": 1600,
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async",
+        "sizes": "(min-width: 840px) 50vw, 100vw",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "100%",
+          "minHeight": "0",
+          "objectFit": "cover",
+          "objectPosition": "center 58%"
+        },
+        "classes": "ank-display-block ank-objectFit-cover"
+      }
+    },
+    {
+      "id": "homeSteps",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "homeStepsContent"
+        ]
+      }
+    },
+    {
+      "id": "homeStepsContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "homeStepsEyebrow",
+          "homeStepsTitle",
+          "homeStepsIntro",
+          "homeStepsGrid"
+        ]
+      }
+    },
+    {
+      "id": "homeStepsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Así de simple",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "homeStepsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.title",
+      "config": {
+        "tag": "h2",
+        "text": "Tres pasos entre tu congelador y tu vaso.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "homeStepsIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.intro",
+      "config": {
+        "tag": "p",
+        "text": "Cada porción reúne frutas y verduras previamente preparadas.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "homeStepsGrid",
+      "type": "container",
+      "config": {
+        "tag": "ol",
+        "classes": "stepGrid ank-listStyle-none ank-padding-0 ank-margin-0",
+        "components": [
+          "homeStepOpen",
+          "homeStepLiquid",
+          "homeStepBlend"
+        ]
+      }
+    },
+    {
+      "id": "homeStepOpen",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "stepItem",
+        "components": [
+          "homeStepOpenNumber",
+          "homeStepOpenTitle",
+          "homeStepOpenDescription"
+        ]
+      }
+    },
+    {
+      "id": "homeStepOpenNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.open.number",
+      "config": {
+        "tag": "span",
+        "text": "01",
+        "classes": "stepNumber"
+      }
+    },
+    {
+      "id": "homeStepOpenTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.open.title",
+      "config": {
+        "tag": "h3",
+        "text": "Abre",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "homeStepOpenDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.open.description",
+      "config": {
+        "tag": "p",
+        "text": "Saca una porción congelada y abre el empaque.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "homeStepLiquid",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "stepItem",
+        "components": [
+          "homeStepLiquidNumber",
+          "homeStepLiquidTitle",
+          "homeStepLiquidDescription"
+        ]
+      }
+    },
+    {
+      "id": "homeStepLiquidNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.liquid.number",
+      "config": {
+        "tag": "span",
+        "text": "02",
+        "classes": "stepNumber"
+      }
+    },
+    {
+      "id": "homeStepLiquidTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.liquid.title",
+      "config": {
+        "tag": "h3",
+        "text": "Agrega líquido",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "homeStepLiquidDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.liquid.description",
+      "config": {
+        "tag": "p",
+        "text": "Completa la mezcla con el líquido de tu elección.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "homeStepBlend",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "stepItem",
+        "components": [
+          "homeStepBlendNumber",
+          "homeStepBlendTitle",
+          "homeStepBlendDescription"
+        ]
+      }
+    },
+    {
+      "id": "homeStepBlendNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.blend.number",
+      "config": {
+        "tag": "span",
+        "text": "03",
+        "classes": "stepNumber"
+      }
+    },
+    {
+      "id": "homeStepBlendTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.blend.title",
+      "config": {
+        "tag": "h3",
+        "text": "Licúa",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "homeStepBlendDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.steps.blend.description",
+      "config": {
+        "tag": "p",
+        "text": "Licúa, sirve una bebida de 250 ml y disfruta.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "homeCatalog",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSection",
+        "components": [
+          "homeCatalogContent"
+        ]
+      }
+    },
+    {
+      "id": "homeCatalogContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "homeCatalogEyebrow",
+          "homeCatalogTitle",
+          "homeCatalogDescription",
+          "homeProductGrid",
+          "homeCatalogLink"
+        ]
+      }
+    },
+    {
+      "id": "homeCatalogEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Seis mezclas",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "homeCatalogTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.title",
+      "config": {
+        "tag": "h2",
+        "text": "Un color y una combinación para cada antojo.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "homeCatalogDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.description",
+      "config": {
+        "tag": "p",
+        "text": "Conoce las seis mezclas Greenstock.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "homeProductGrid",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "products",
+        "templateId": "homeProductCardTemplate",
+        "idPrefix": "homeProduct",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "name"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "ingredients"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "image"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "productGrid",
+        "components": []
+      }
+    },
+    {
+      "id": "homeProductCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "benefits": [],
+        "imageSrc": "",
+        "imageAlt": "",
+        "imageContainerClasses": "ank-width-100per ank-height-280px ank-height-md-320px ank-overflow-hidden ank-bg-secondaryBgColor",
+        "imageClasses": "ank-display-block ank-width-100per ank-height-100per ank-objectFit-cover",
+        "linkLabel": "40 MXN por porción",
+        "linkClasses": "ank-m-0 ank-color-titleColor ank-fontSize-0_9rem ank-fontWeight-900",
+        "classes": "productCard",
+        "featureTitleClasses": "compactTitle",
+        "featureDescriptionClasses": "bodyCopy",
+        "benefitsListClasses": "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexWrap-wrap ank-gap-6px",
+        "benefitItemClasses": "ank-color-linkColor ank-fontSize-0_82rem ank-fontWeight-800",
+        "benefitTextClasses": "ank-color-linkColor"
+      }
+    },
+    {
+      "id": "homeCatalogLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.catalog.link",
+      "config": {
+        "href": "/menu",
+        "text": "Explorar el menú completo",
+        "classes": "secondaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
+      }
+    },
+    {
+      "id": "homeProcess",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionWarm",
+        "components": [
+          "homeProcessSplit"
+        ]
+      }
+    },
+    {
+      "id": "homeProcessSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "homeProcessCopy",
+          "homeProcessFigure"
+        ]
+      }
+    },
+    {
+      "id": "homeProcessCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "homeProcessEyebrow",
+          "homeProcessTitle",
+          "homeProcessDescription"
+        ]
+      }
+    },
+    {
+      "id": "homeProcessEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "La porción completa",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "homeProcessTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.title",
+      "config": {
+        "tag": "h2",
+        "text": "Conveniencia sin separar la fibra.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "homeProcessDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.description",
+      "config": {
+        "tag": "p",
+        "text": "La mezcla se transforma completa en tu vaso.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "homeProcessFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "ank-m-0 ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "homeProcessPoster",
+          "homeProcessLoadLabel",
+          "homeProcessVideo",
+          "homeProcessCaption"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "minmax(0, 1fr)",
+          "gap": "16px",
+          "alignItems": "center",
+          "margin": "0",
+          "width": "100%",
+          "minWidth": "0"
+        }
+      }
+    },
+    {
+      "id": "homeProcessVideo",
+      "type": "media",
+      "config": {
+        "tag": "video",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-process-01.mp4",
+        "alt": "",
+        "classes": "videoMedia",
+        "styles": {
+          "width": "100%",
+          "display": "block",
+          "maxWidth": "960px",
+          "height": "clamp(320px, 40vw, 480px)",
+          "maxHeight": "480px",
+          "objectFit": "contain"
+        },
+        "controls": true,
+        "preload": "none",
+        "autoplay": false,
+        "ariaLabel": "Reproducir demostración visual de ingredientes Greenstock"
+      }
+    },
+    {
+      "id": "homeProcessCaption",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.caption",
+      "config": {
+        "tag": "figcaption",
+        "text": "Descripción completa del video sin audio: recorrido horizontal por recipientes con piña, hierbas y otros ingredientes preparados. No contiene narración ni información adicional.",
+        "classes": "figureCaption",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "72ch"
+        }
+      }
+    },
+    {
+      "id": "homeImpact",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionDark",
+        "components": [
+          "homeImpactSplit"
+        ]
+      }
+    },
+    {
+      "id": "homeImpactSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "homeImpactImage",
+          "homeImpactCopy"
+        ]
+      }
+    },
+    {
+      "id": "homeImpactImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-fresh-01.webp",
+        "alt": "Mascota Greenstock celebrando ingredientes frescos",
+        "width": 900,
+        "height": 900,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-contain"
+      }
+    },
+    {
+      "id": "homeImpactCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "homeImpactEyebrow",
+          "homeImpactTitle",
+          "homeImpactDescription",
+          "homeImpactLink"
+        ]
+      }
+    },
+    {
+      "id": "homeImpactEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.impact.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Algo bueno detrás de cada porción",
+        "classes": "ank-m-0 ank-color-secondaryAccentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "homeImpactTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.impact.title",
+      "config": {
+        "tag": "h2",
+        "text": "Una operación que busca abrir oportunidades.",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2rem ank-fontSize-md-2rem ank-fontSize-lg-3_2rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "homeImpactDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.impact.description",
+      "config": {
+        "tag": "p",
+        "text": "Greenstock impulsa un modelo de empleo incluyente.",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_08rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "homeImpactLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.impact.link",
+      "config": {
+        "href": "/impacto",
+        "text": "Conocer nuestro impacto",
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "homeWholesale",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSection",
+        "components": [
+          "homeWholesaleSplit"
+        ]
+      }
+    },
+    {
+      "id": "homeWholesaleSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "homeWholesaleCopy",
+          "homeWholesaleImage"
+        ]
+      }
+    },
+    {
+      "id": "homeWholesaleCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "homeWholesaleEyebrow",
+          "homeWholesaleTitle",
+          "homeWholesaleDescription",
+          "homeWholesaleLink"
+        ]
+      }
+    },
+    {
+      "id": "homeWholesaleEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.wholesale.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Para negocios",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "homeWholesaleTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.wholesale.title",
+      "config": {
+        "tag": "h2",
+        "text": "Una opción lista para sumar a tu operación.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "homeWholesaleDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.wholesale.description",
+      "config": {
+        "tag": "p",
+        "text": "Solicita precios por volumen para tu negocio.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "homeWholesaleLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.wholesale.link",
+      "config": {
+        "href": "/mayoreo",
+        "text": "Ver mayoreo",
+        "classes": "secondaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
+      }
+    },
+    {
+      "id": "homeWholesaleImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-preparation-02.webp",
+        "alt": "Porción Greenstock durante la preparación",
+        "width": 1200,
+        "height": 1000,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "galleryImage"
+      }
+    },
+    {
+      "id": "homeQuestions",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionWarm",
+        "components": [
+          "homeQuestionsContent"
+        ]
+      }
+    },
+    {
+      "id": "homeQuestionsContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "homeQuestionsEyebrow",
+          "homeQuestionsTitle",
+          "homeQuestionsDescription",
+          "homeQuestionsLink"
+        ]
+      }
+    },
+    {
+      "id": "homeQuestionsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.questions.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Antes de pedir",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "homeQuestionsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.questions.title",
+      "config": {
+        "tag": "h2",
+        "text": "Preparación, conservación y entrega, explicadas.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "homeQuestionsDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.questions.description",
+      "config": {
+        "tag": "p",
+        "text": "Encuentra respuestas útiles antes de pedir.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "homeQuestionsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.questions.link",
+      "config": {
+        "href": "/preguntas",
+        "text": "Resolver preguntas",
+        "classes": "secondaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
+      }
+    },
+    {
+      "id": "homeFinal",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "homeFinalContent"
+        ]
+      }
+    },
+    {
+      "id": "homeFinalContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent ank-alignItems-start",
+        "components": [
+          "homeFinalTitle",
+          "homeFinalDescription",
+          "homeFinalCta"
+        ]
+      }
+    },
+    {
+      "id": "homeFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.final.title",
+      "config": {
+        "tag": "h2",
+        "text": "Elige tu mezcla y escríbenos.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "homeFinalDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.final.description",
+      "config": {
+        "tag": "p",
+        "text": "La porción cuesta 40 MXN; confirma entrega o recolección.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "homeFinalCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,page.final.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pide ahora",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "homeBrandAccent",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-orange.png",
+        "alt": "",
+        "width": 160,
+        "height": 160,
+        "loading": "lazy",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "ank-display-block ank-objectFit-contain",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "80px",
+          "height": "80px"
+        }
+      }
+    },
+    {
+      "id": "homeProcessPoster",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-process-01-poster.webp",
+        "alt": "Vista previa del recorrido por ingredientes Greenstock preparados en recipientes",
+        "width": 1280,
+        "height": 720,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px",
+        "styles": {
+          "display": "block",
+          "width": "96px",
+          "height": "128px",
+          "maxWidth": "100%",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "id": "homeProcessLoadLabel",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Reproducción opcional: usa el control Reproducir para cargar el video.",
+        "classes": "bodyCopy",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "48ch"
+        }
+      }
+    }
+  ]
+}

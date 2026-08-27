@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "preguntas",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "hero": {
+        "eyebrow": "Preguntas frecuentes",
+        "title": "Lo que necesitas saber antes de licuar.",
+        "description": "Preparación, congelación, fibra, conservación, recolección y entrega en un solo lugar.",
+        "cta": "Pide ahora"
+      },
+      "faq": {
+        "title": "Respuestas directas",
+        "description": "Si necesitas confirmar cobertura o una condición específica de pedido, escríbenos por Instagram.",
+        "items": [
+          { "id": "preparacion", "title": "¿Cómo preparo una porción Greenstock?", "content": "Abre la porción congelada, agrega el líquido que prefieras y licúa hasta obtener la textura deseada." },
+          { "id": "rendimiento", "title": "¿Cuánto rinde cada porción?", "content": "Cada porción está pensada para preparar una bebida de 250 ml." },
+          { "id": "fibra", "title": "¿Las porciones conservan la fibra?", "content": "La fruta y la verdura se licúan completas; la preparación no pasa por un extractor que separe la pulpa." },
+          { "id": "operacion", "title": "¿Dónde opera Greenstock?", "content": "La propuesta actual de recolección y entrega se concentra en Ciudad de México. Confirma la cobertura disponible al pedir." },
+          { "id": "minimo", "title": "¿Cuál es el pedido mínimo para entrega?", "content": "El mínimo informado por Greenstock para entrega es de 175 MXN." },
+          { "id": "conservacion", "title": "¿Cómo conservo las porciones?", "content": "Mantén las porciones congeladas y sigue las indicaciones visibles en el empaque. Si una porción pierde su condición esperada, consulta antes de consumirla." },
+          { "id": "pedido", "title": "¿Cómo hago un pedido?", "content": "Los pedidos y preguntas se coordinan en el Instagram autorizado de Greenstock." }
+        ]
+      },
+      "video": {
+        "eyebrow": "Míralo en acción",
+        "title": "Abrir, agregar y licuar.",
+        "description": "Abre la porción, agrega líquido y licúa. Así de simple.",
+        "caption": "Abre la porción, agrega líquido y licúa. Así de simple."
+      },
+      "contact": {
+        "title": "¿Tu pregunta no está aquí?",
+        "description": "Escríbenos en Instagram para confirmar cobertura, recolección, entrega o disponibilidad de una mezcla.",
+        "cta": "Preguntar por Instagram"
+      }
+    }
+  }
+}

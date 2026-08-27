@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "impacto",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "impactMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": {
+      "es": "Impacto Greenstock | Conveniencia con inclusión"
+    },
+    "description": {
+      "es": "Conoce el propósito de Greenstock: facilitar el consumo práctico de frutas y verduras mientras impulsa oportunidades de empleo incluyente."
+    },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/impacto?draftDomain=somosgreenstock.mx"
+    },
+    "robots": {
+      "es": "noindex,nofollow"
+    },
+    "openGraph": {
+      "type": {
+        "es": "website"
+      },
+      "title": {
+        "es": "Impacto Greenstock | Conveniencia con inclusión"
+      },
+      "description": {
+        "es": "Una propuesta que une preparación práctica, aprovechamiento e inclusión laboral."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-impact-02.webp"
+      }
+    },
+    "twitter": {
+      "card": {
+        "es": "summary_large_image"
+      },
+      "title": {
+        "es": "Impacto Greenstock | Conveniencia con inclusión"
+      },
+      "description": {
+        "es": "Descubre la misión y el modelo de impacto de Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-impact-02.webp"
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Impacto Greenstock",
+        "inLanguage": "es-MX",
+        "description": "La misión de Greenstock combina alimentación práctica, inclusión laboral y aprovechamiento responsable de ingredientes.",
+        "primaryImageOfPage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-impact-02.webp"
+      }
+    ]
+  }
+}

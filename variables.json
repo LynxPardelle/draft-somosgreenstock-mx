@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "allPages",
+  "variables": {
+    "brand": {
+      "displayName": "Greenstock",
+      "tagline": "Fast, Fresh & Flavfull",
+      "logoUrl": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-primary.png"
+    },
+    "heroAssets": {
+      "logoUrl": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-cream.png",
+      "logoAlt": "Greenstock",
+      "heroImageUrl": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-front-01.webp",
+      "heroImageAlt": "Porción Greenstock congelada y empacada al vacío, lista para licuar"
+    },
+    "ctaTargets": {
+      "orderUrl": "https://www.instagram.com/greens.tock/",
+      "wholesaleUrl": "https://www.instagram.com/greens.tock/",
+      "contactUrl": "https://www.instagram.com/greens.tock/"
+    },
+    "socialLinks": [
+      {
+        "id": "instagram",
+        "label": "Instagram de Greenstock",
+        "ariaLabel": "Abrir Instagram de Greenstock",
+        "url": "https://www.instagram.com/greens.tock/",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "navigation": [
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "/"
+      },
+      {
+        "id": "menu",
+        "label": "Menú",
+        "href": "/menu"
+      },
+      {
+        "id": "impacto",
+        "label": "Impacto",
+        "href": "/impacto"
+      },
+      {
+        "id": "mayoreo",
+        "label": "Mayoreo",
+        "href": "/mayoreo"
+      },
+      {
+        "id": "preguntas",
+        "label": "Preguntas",
+        "href": "/preguntas"
+      }
+    ],
+    "pricing": {
+      "currency": "MXN",
+      "retail": {
+        "currency": "MXN",
+        "unitPriceMxn": 40,
+        "minimumDeliveryOrderMxn": 175,
+        "pickupNote": "Pregunta por opciones de recolección y entrega disponibles en Ciudad de México."
+      },
+      "wholesale": [
+        {
+          "minimumQuantity": 50,
+          "unitPriceMxn": 37,
+          "label": "Desde 50 piezas"
+        },
+        {
+          "minimumQuantity": 500,
+          "unitPriceMxn": 35,
+          "label": "Desde 500 piezas"
+        },
+        {
+          "minimumQuantity": 1000,
+          "unitPriceMxn": 30,
+          "label": "Desde 1,000 piezas"
+        }
+      ]
+    },
+    "preparationSteps": [
+      {
+        "step": "01",
+        "title": "Abre",
+        "description": "Saca una porción congelada y abre el empaque."
+      },
+      {
+        "step": "02",
+        "title": "Agrega líquido",
+        "description": "Vierte el líquido de tu elección para completar una bebida de 250 ml."
+      },
+      {
+        "step": "03",
+        "title": "Licúa",
+        "description": "Licúa hasta obtener la textura que prefieras y disfruta al momento."
+      }
+    ],
+    "products": [
+      {
+        "id": "verde-detox",
+        "name": "Verde Detox",
+        "ingredients": [
+          "espinaca",
+          "pepino",
+          "perejil",
+          "nopal",
+          "apio",
+          "piña"
+        ],
+        "description": "Una mezcla verde con piña, nopal y hierbas frescas.",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp",
+        "alternateImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-02.webp",
+        "imageAlt": "Collage de ingredientes y empaque de Verde Detox",
+        "imageWidth": 1080,
+        "imageHeight": 1920
+      },
+      {
+        "id": "green-fresh",
+        "name": "Green Fresh",
+        "ingredients": [
+          "pepino",
+          "apio",
+          "manzana verde"
+        ],
+        "description": "Pepino, apio y manzana verde en una porción práctica.",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/green-fresh-01.webp",
+        "alternateImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/green-fresh-02.webp",
+        "imageAlt": "Collage de ingredientes y empaque de Green Fresh",
+        "imageWidth": 1080,
+        "imageHeight": 1920
+      },
+      {
+        "id": "kale-vibes",
+        "name": "Kale Vibes",
+        "ingredients": [
+          "piña",
+          "kale",
+          "jengibre"
+        ],
+        "description": "Piña, kale y jengibre listos para transformar en bebida.",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/kale-vibes-01.webp",
+        "alternateImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/kale-vibes-02.webp",
+        "imageAlt": "Collage de ingredientes y empaque de Kale Vibes",
+        "imageWidth": 1080,
+        "imageHeight": 1920
+      },
+      {
+        "id": "lemon-fit",
+        "name": "Lemon Fit",
+        "ingredients": [
+          "limón",
+          "apio",
+          "manzana verde"
+        ],
+        "description": "Limón, apio y manzana verde en una mezcla de sabor directo.",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/lemon-fit-01.webp",
+        "alternateImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/lemon-fit-02.webp",
+        "imageAlt": "Collage de ingredientes y empaque de Lemon Fit",
+        "imageWidth": 1080,
+        "imageHeight": 1920
+      },
+      {
+        "id": "mint-pop",
+        "name": "Mint Pop",
+        "ingredients": [
+          "pepino",
+          "melón",
+          "menta",
+          "limón"
+        ],
+        "description": "Pepino, melón, menta y limón para una combinación fresca.",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/mint-pop-01.webp",
+        "alternateImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/mint-pop-02.webp",
+        "imageAlt": "Collage de ingredientes y empaque de Mint Pop",
+        "imageWidth": 1080,
+        "imageHeight": 1920
+      },
+      {
+        "id": "fruit-splash",
+        "name": "Fruit Splash",
+        "ingredients": [
+          "mango",
+          "fresa",
+          "espinaca"
+        ],
+        "description": "Mango, fresa y espinaca en una mezcla frutal y colorida.",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-01.webp",
+        "alternateImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-02.webp",
+        "imageAlt": "Collage de ingredientes y empaque de Fruit Splash",
+        "imageWidth": 1080,
+        "imageHeight": 1920
+      }
+    ],
+    "implementationNotes": {
+      "fontLoading": "Montserrat se mantiene como familia preferida solicitada por el cliente; el runtime compartido aún no ofrece un mecanismo declarativo verificado para entregar sus archivos de fuente, por lo que conserva Arial y sans-serif como respaldo."
+    },
+    "assets": {
+      "logos": [
+        {
+          "id": "wordmark-primary",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-primary.png",
+          "alt": "Greenstock en verde",
+          "status": "ready"
+        },
+        {
+          "id": "wordmark-cream",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-cream.png",
+          "alt": "Greenstock en beige",
+          "status": "ready"
+        },
+        {
+          "id": "wordmark-orange",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-orange.png",
+          "alt": "Greenstock en naranja",
+          "status": "ready"
+        },
+        {
+          "id": "wordmark-dark",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-dark.png",
+          "alt": "Greenstock en verde oscuro",
+          "status": "ready"
+        },
+        {
+          "id": "mark-primary",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-primary.png",
+          "alt": "Símbolo Greenstock en verde",
+          "status": "ready"
+        },
+        {
+          "id": "mark-cream",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-cream.png",
+          "alt": "Símbolo Greenstock en beige",
+          "status": "ready"
+        },
+        {
+          "id": "mark-orange",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-orange.png",
+          "alt": "Símbolo Greenstock en naranja",
+          "status": "ready"
+        },
+        {
+          "id": "mark-dark",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-dark.png",
+          "alt": "Símbolo Greenstock en verde oscuro",
+          "status": "ready"
+        }
+      ],
+      "packagePhotos": [
+        {
+          "id": "package-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-front-01.webp",
+          "alt": "Empaque Greenstock visto de frente",
+          "status": "ready"
+        },
+        {
+          "id": "package-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-preparation-02.webp",
+          "alt": "Porción Greenstock durante la preparación",
+          "status": "ready"
+        },
+        {
+          "id": "package-03",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-detail-03.webp",
+          "alt": "Detalle del empaque al vacío Greenstock",
+          "status": "ready"
+        },
+        {
+          "id": "package-04",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-freezer-04.webp",
+          "alt": "Porciones Greenstock congeladas",
+          "status": "ready"
+        },
+        {
+          "id": "package-05",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-serving-05.webp",
+          "alt": "Porción Greenstock junto a una bebida preparada",
+          "status": "ready"
+        }
+      ],
+      "mascots": [
+        {
+          "id": "mascot-fresh",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-fresh-01.webp",
+          "alt": "Mascota Greenstock celebrando ingredientes frescos",
+          "status": "ready"
+        },
+        {
+          "id": "mascot-impact",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-impact-02.webp",
+          "alt": "Mascota Greenstock representando inclusión",
+          "status": "ready"
+        },
+        {
+          "id": "mascot-question",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-question-03.webp",
+          "alt": "Mascota Greenstock haciendo una pregunta",
+          "status": "ready"
+        }
+      ],
+      "productCollages": [
+        {
+          "id": "verde-detox-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp",
+          "alt": "Collage Verde Detox, vista uno",
+          "status": "ready"
+        },
+        {
+          "id": "verde-detox-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-02.webp",
+          "alt": "Collage Verde Detox, vista dos",
+          "status": "ready"
+        },
+        {
+          "id": "green-fresh-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/green-fresh-01.webp",
+          "alt": "Collage Green Fresh, vista uno",
+          "status": "ready"
+        },
+        {
+          "id": "green-fresh-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/green-fresh-02.webp",
+          "alt": "Collage Green Fresh, vista dos",
+          "status": "ready"
+        },
+        {
+          "id": "kale-vibes-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/kale-vibes-01.webp",
+          "alt": "Collage Kale Vibes, vista uno",
+          "status": "ready"
+        },
+        {
+          "id": "kale-vibes-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/kale-vibes-02.webp",
+          "alt": "Collage Kale Vibes, vista dos",
+          "status": "ready"
+        },
+        {
+          "id": "lemon-fit-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/lemon-fit-01.webp",
+          "alt": "Collage Lemon Fit, vista uno",
+          "status": "ready"
+        },
+        {
+          "id": "lemon-fit-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/lemon-fit-02.webp",
+          "alt": "Collage Lemon Fit, vista dos",
+          "status": "ready"
+        },
+        {
+          "id": "mint-pop-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/mint-pop-01.webp",
+          "alt": "Collage Mint Pop, vista uno",
+          "status": "ready"
+        },
+        {
+          "id": "mint-pop-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/mint-pop-02.webp",
+          "alt": "Collage Mint Pop, vista dos",
+          "status": "ready"
+        },
+        {
+          "id": "fruit-splash-01",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-01.webp",
+          "alt": "Collage Fruit Splash, vista uno",
+          "status": "ready"
+        },
+        {
+          "id": "fruit-splash-02",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-02.webp",
+          "alt": "Collage Fruit Splash, vista dos",
+          "status": "ready"
+        }
+      ],
+      "videos": [
+        {
+          "id": "greenstock-process-01",
+          "status": "ready",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-process-01.mp4",
+          "posterUrl": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-process-01-poster.webp",
+          "description": "Recorrido horizontal por piña, hierbas y otros ingredientes preparados en recipientes.",
+          "audio": "none",
+          "format": "H.264",
+          "operationalNote": "Derivado optimizado con faststart, sin audio y reproducción iniciada solo por la persona usuaria."
+        },
+        {
+          "id": "greenstock-blend-02",
+          "status": "pending-source-materialization",
+          "expectedObjectKey": "somosgreenstock.mx/shared/videos/greenstock-blend-02.mp4",
+          "description": "Contenido pendiente de materialización; su función deberá confirmarse después de inspeccionar el archivo.",
+          "operationalGate": "Pendiente de materializar, inspeccionar, optimizar y generar un poster aprobado antes de habilitar su reproducción."
+        },
+        {
+          "id": "greenstock-product-03",
+          "status": "ready",
+          "url": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-product-03.mp4",
+          "posterUrl": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-product-03-poster.webp",
+          "description": "Recorrido vertical por recipientes con piña, pepino, hojas verdes y jengibre.",
+          "audio": "none",
+          "format": "H.264",
+          "operationalNote": "Derivado optimizado con faststart, sin audio y reproducción iniciada solo por la persona usuaria."
+        },
+        {
+          "id": "greenstock-impact-04",
+          "status": "pending-source-materialization",
+          "expectedObjectKey": "somosgreenstock.mx/shared/videos/greenstock-impact-04.mp4",
+          "description": "Contenido pendiente de materialización; su función deberá confirmarse después de inspeccionar el archivo.",
+          "operationalGate": "Pendiente de materializar, inspeccionar, optimizar y generar un poster aprobado antes de habilitar su reproducción."
+        }
+      ]
+    }
+  }
+}

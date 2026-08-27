@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "preguntas",
+  "components": [
+    {
+      "id": "questionsMain",
+      "type": "container",
+      "config": {
+        "id": "main-content",
+        "tag": "main",
+        "classes": "pageMain",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "scrollMarginTop": "128px"
+        },
+        "components": [
+          "questionsHero",
+          "questionsFaqSection",
+          "questionsVideoSection",
+          "questionsContact"
+        ],
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "questionsHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "questionsHeroSplit"
+        ]
+      }
+    },
+    {
+      "id": "questionsHeroSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "questionsHeroCopy",
+          "questionsHeroMascot"
+        ]
+      }
+    },
+    {
+      "id": "questionsHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "questionsBrandAccent",
+          "questionsHeroEyebrow",
+          "questionsHeroTitle",
+          "questionsHeroDescription",
+          "questionsHeroCta"
+        ]
+      }
+    },
+    {
+      "id": "questionsHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Preguntas frecuentes",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "questionsHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "Lo que necesitas saber antes de licuar.",
+        "classes": "displayTitle",
+        "styles": {
+          "fontSize": "clamp(2.2rem, 3.4vw, 4.25rem)",
+          "maxWidth": "20ch",
+          "lineHeight": "1.02"
+        }
+      }
+    },
+    {
+      "id": "questionsHeroDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.description",
+      "config": {
+        "tag": "p",
+        "text": "Preparación, congelación, fibra, conservación y entrega.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "questionsHeroCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,page.hero.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pide ahora",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "questionsHeroMascot",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-question-03.webp",
+        "alt": "Mascota Greenstock haciendo una pregunta",
+        "width": 1000,
+        "height": 1000,
+        "loading": "eager",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-contain",
+        "fetchPriority": "high",
+        "sizes": "(min-width: 768px) 50vw, 100vw"
+      }
+    },
+    {
+      "id": "questionsFaqSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSection",
+        "components": [
+          "questionsFaqContent"
+        ]
+      }
+    },
+    {
+      "id": "questionsFaqContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "questionsFaqTitle",
+          "questionsFaqDescription",
+          "questionsAccordion"
+        ]
+      }
+    },
+    {
+      "id": "questionsFaqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.title",
+      "config": {
+        "tag": "h2",
+        "text": "Respuestas directas",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "questionsFaqDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.description",
+      "config": {
+        "tag": "p",
+        "text": "Escríbenos por Instagram para confirmar una condición específica.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "questionsAccordion",
+      "type": "accordion",
+      "config": {
+        "mode": "single",
+        "allowToggle": true,
+        "itemsSource": {
+          "source": "i18n",
+          "path": "page.faq.items"
+        },
+        "containerClasses": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-0 ank-borderTop-2px__solid__titleColor",
+        "defaultItemContainerClasses": "ank-borderBottom-2px__solid__titleColor ank-paddingBlock-8px",
+        "defaultItemButtonIsExpandedClasses": "ank-bg-secondaryBgColor ank-color-titleColor ank-minHeight-52px focusRing",
+        "defaultItemButtonIsNotExpandedClasses": "ank-bg-transparent ank-color-titleColor ank-minHeight-52px focusRing",
+        "defaultItemPanelClasses": "ank-paddingInline-18px ank-paddingBlock-18px ank-color-textColor",
+        "buttonContentClasses": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-16px ank-paddingInline-14px",
+        "titleClasses": "ank-fontSize-1_05rem ank-fontWeight-900 ank-textAlign-left",
+        "detailContentClasses": "ank-fontSize-1rem ank-lineHeight-1_7",
+        "toggleIconName": "add"
+      }
+    },
+    {
+      "id": "questionsVideoSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionWarm",
+        "components": [
+          "questionsVideoSplit"
+        ]
+      }
+    },
+    {
+      "id": "questionsVideoSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "questionsVideoCopy",
+          "questionsVideoFigure"
+        ]
+      }
+    },
+    {
+      "id": "questionsVideoCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "questionsVideoEyebrow",
+          "questionsVideoTitle",
+          "questionsVideoDescription"
+        ]
+      }
+    },
+    {
+      "id": "questionsVideoEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.video.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Míralo en acción",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "questionsVideoTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.video.title",
+      "config": {
+        "tag": "h2",
+        "text": "Abrir, agregar y licuar.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "questionsVideoDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.video.description",
+      "config": {
+        "tag": "p",
+        "text": "Abre la porción, agrega líquido y licúa. Así de simple.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "questionsVideoFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "ank-m-0 ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "questionsPendingImage",
+          "questionsPendingCopy"
+        ]
+      },
+      "assetRef": "greenstock-blend-02",
+      "assetStatus": "pending-source-materialization"
+    },
+    {
+      "id": "questionsContact",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionDark",
+        "components": [
+          "questionsContactContent"
+        ]
+      }
+    },
+    {
+      "id": "questionsContactContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "questionsContactTitle",
+          "questionsContactDescription",
+          "questionsContactCta"
+        ]
+      }
+    },
+    {
+      "id": "questionsContactTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.title",
+      "config": {
+        "tag": "h2",
+        "text": "¿Tu pregunta no está aquí?",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2rem ank-fontSize-md-3_2rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "questionsContactDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.description",
+      "config": {
+        "tag": "p",
+        "text": "Confirma cobertura, recolección, entrega o una mezcla.",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_08rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "questionsContactCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.contactUrl;set:config.text,i18n,page.contact.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Preguntar por Instagram",
+        "ariaLabel": "Preguntar a Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "questionsBrandAccent",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-orange.png",
+        "alt": "",
+        "width": 160,
+        "height": 160,
+        "loading": "lazy",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "112px",
+          "height": "112px"
+        }
+      }
+    },
+    {
+      "id": "questionsPendingImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-preparation-02.webp",
+        "alt": "Porción Greenstock empacada con ingredientes visibles como alternativa estática al video pendiente",
+        "width": 1200,
+        "height": 1600,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px"
+      }
+    },
+    {
+      "id": "questionsPendingCopy",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Video de licuado pendiente: se activará solo después de materializar, inspeccionar, optimizar y aprobar el archivo.",
+        "classes": "figureCaption"
+      }
+    }
+  ]
+}

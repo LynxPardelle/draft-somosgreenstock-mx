@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "allPages",
+  "components": [
+    {
+      "id": "skipToMainLink",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Saltar al contenido principal",
+        "ariaControls": "main-content",
+        "classes": "skipLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "fontSize": "14px",
+          "fontFamily": "inherit",
+          "cursor": "pointer",
+          "border": "0"
+        }
+      },
+      "eventInstructions": "skipToMain:main-content"
+    },
+    {
+      "id": "siteHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "siteHeader",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "display": "flex",
+          "justifyContent": "center",
+          "width": "100%",
+          "boxSizing": "border-box",
+          "paddingInline": "20px"
+        },
+        "components": [
+          "headerShell"
+        ]
+      }
+    },
+    {
+      "id": "headerShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "headerShell",
+        "components": [
+          "brandHomeLink",
+          "siteNav",
+          "headerOrderCta"
+        ],
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "width": "100%",
+          "maxWidth": "1180px",
+          "minHeight": "88px",
+          "boxSizing": "border-box",
+          "paddingBlock": "4px",
+          "columnGap": "12px",
+          "rowGap": "0",
+          "flexWrap": "wrap"
+        }
+      }
+    },
+    {
+      "id": "brandHomeLink",
+      "type": "link",
+      "config": {
+        "href": "/",
+        "text": "",
+        "ariaLabel": "Greenstock, ir al inicio",
+        "classes": "brandHomeLink ank-order-1",
+        "components": [
+          "headerLogo"
+        ],
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "center",
+          "justifySelf": "start"
+        }
+      }
+    },
+    {
+      "id": "headerLogo",
+      "type": "media",
+      "valueInstructions": "set:config.src,var,brand.logoUrl;set:config.alt,i18n,ui.logoAlt",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-primary.png",
+        "alt": "Greenstock",
+        "width": 1600,
+        "height": 1600,
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "headerLogo",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "64px",
+          "height": "64px"
+        }
+      }
+    },
+    {
+      "id": "siteNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "ariaLabel": "Navegación principal",
+        "classes": "siteNav",
+        "components": [
+          "navHome",
+          "navMenu",
+          "navImpact",
+          "navWholesale",
+          "navQuestions"
+        ],
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "gap": "0",
+          "minHeight": "44px",
+          "paddingBottom": "0",
+          "overflowX": "visible",
+          "flexWrap": "wrap"
+        }
+      }
+    },
+    {
+      "id": "navHome",
+      "type": "link",
+      "config": {
+        "href": "/",
+        "text": "Inicio",
+        "classes": "navLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
+        }
+      }
+    },
+    {
+      "id": "navMenu",
+      "type": "link",
+      "config": {
+        "href": "/menu",
+        "text": "Menú",
+        "classes": "navLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
+        }
+      }
+    },
+    {
+      "id": "navImpact",
+      "type": "link",
+      "config": {
+        "href": "/impacto",
+        "text": "Impacto",
+        "classes": "navLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
+        }
+      }
+    },
+    {
+      "id": "navWholesale",
+      "type": "link",
+      "config": {
+        "href": "/mayoreo",
+        "text": "Mayoreo",
+        "classes": "navLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
+        }
+      }
+    },
+    {
+      "id": "navQuestions",
+      "type": "link",
+      "config": {
+        "href": "/preguntas",
+        "text": "Preguntas",
+        "classes": "navLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "4px",
+          "whiteSpace": "nowrap",
+          "minWidth": "44px"
+        }
+      }
+    },
+    {
+      "id": "headerOrderCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,ui.orderCta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pide ahora",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-order-2 ank-order-lg-3",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "center",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)",
+          "fontSize": "14px",
+          "paddingInline": "16px",
+          "paddingBlock": "10px"
+        }
+      }
+    },
+    {
+      "id": "siteFooter",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "classes": "siteFooter",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "paddingInline": "20px",
+          "boxSizing": "border-box"
+        },
+        "components": [
+          "footerShell"
+        ]
+      }
+    },
+    {
+      "id": "footerShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "footerShell",
+        "components": [
+          "footerBrand",
+          "footerNav",
+          "footerDisclaimer",
+          "footerInstagramCta"
+        ],
+        "styles": {
+          "maxWidth": "1180px",
+          "marginInline": "auto"
+        }
+      }
+    },
+    {
+      "id": "footerBrand",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "footerBrand",
+        "components": [
+          "footerPrimaryLogo",
+          "footerSlogan"
+        ]
+      }
+    },
+    {
+      "id": "footerPrimaryLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-cream.png",
+        "alt": "Greenstock",
+        "width": 354,
+        "height": 354,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "footerPrimaryLogo",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "160px",
+          "height": "160px"
+        }
+      }
+    },
+    {
+      "id": "footerSlogan",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,ui.slogan",
+      "config": {
+        "tag": "p",
+        "text": "Fast, Fresh & Flavfull",
+        "classes": "footerSlogan"
+      }
+    },
+    {
+      "id": "footerNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "ariaLabel": "Navegación al pie",
+        "classes": "footerNav",
+        "components": [
+          "footerMenu",
+          "footerImpact",
+          "footerWholesale",
+          "footerQuestions"
+        ]
+      }
+    },
+    {
+      "id": "footerMenu",
+      "type": "link",
+      "config": {
+        "href": "/menu",
+        "text": "Menú",
+        "classes": "footerNavLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "6px",
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "footerImpact",
+      "type": "link",
+      "config": {
+        "href": "/impacto",
+        "text": "Impacto",
+        "classes": "footerNavLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "6px",
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "footerWholesale",
+      "type": "link",
+      "config": {
+        "href": "/mayoreo",
+        "text": "Mayoreo",
+        "classes": "footerNavLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "6px",
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "footerQuestions",
+      "type": "link",
+      "config": {
+        "href": "/preguntas",
+        "text": "Preguntas",
+        "classes": "footerNavLink",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "44px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "fontSize": "14px",
+          "paddingInline": "6px",
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "footerDisclaimer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,ui.disclaimer",
+      "config": {
+        "tag": "p",
+        "text": "La información nutricional y de bienestar presentada en este sitio es general y no sustituye la orientación médica o nutricional individual.",
+        "classes": "footerDisclaimer"
+      }
+    },
+    {
+      "id": "footerInstagramCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.contactUrl;set:config.text,i18n,ui.instagramCta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Escríbenos por Instagram",
+        "ariaLabel": "Contactar a Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    }
+  ]
+}

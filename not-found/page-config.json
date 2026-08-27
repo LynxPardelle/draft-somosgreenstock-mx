@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "not-found",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "notFoundMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": {
+      "es": "Página no encontrada | Greenstock"
+    },
+    "description": {
+      "es": "La página que buscas no está disponible. Regresa al inicio de Greenstock o explora el menú de seis mezclas listas para licuar."
+    },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/404?draftDomain=somosgreenstock.mx"
+    },
+    "robots": {
+      "es": "noindex,nofollow"
+    },
+    "openGraph": {
+      "type": {
+        "es": "website"
+      },
+      "title": {
+        "es": "Página no encontrada | Greenstock"
+      },
+      "description": {
+        "es": "Encuentra de nuevo el inicio o el menú Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-orange.png"
+      }
+    },
+    "twitter": {
+      "card": {
+        "es": "summary_large_image"
+      },
+      "title": {
+        "es": "Página no encontrada | Greenstock"
+      },
+      "description": {
+        "es": "Regresa al inicio o conoce las mezclas Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-orange.png"
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Página no encontrada",
+        "inLanguage": "es-MX"
+      }
+    ]
+  }
+}

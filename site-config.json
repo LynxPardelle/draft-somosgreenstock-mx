@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "aliases": [],
+  "defaultPageId": "default",
+  "notFoundPageId": "not-found",
+  "routes": [
+    {
+      "path": "/",
+      "pageId": "default",
+      "label": "Inicio"
+    },
+    {
+      "path": "/menu",
+      "pageId": "menu",
+      "label": "Menú"
+    },
+    {
+      "path": "/impacto",
+      "pageId": "impacto",
+      "label": "Impacto"
+    },
+    {
+      "path": "/mayoreo",
+      "pageId": "mayoreo",
+      "label": "Mayoreo"
+    },
+    {
+      "path": "/preguntas",
+      "pageId": "preguntas",
+      "label": "Preguntas"
+    },
+    {
+      "path": "/404",
+      "pageId": "not-found",
+      "label": "Página no encontrada"
+    }
+  ],
+  "site": {
+    "appIdentity": {
+      "identifier": "somosgreenstockmx",
+      "name": "Greenstock",
+      "version": "1.0.0",
+      "description": "Catálogo informativo de porciones congeladas de frutas y verduras listas para licuar en Ciudad de México."
+    },
+    "theme": {
+      "defaultMode": "light",
+      "palettes": {
+        "light": {
+          "bgColor": "#F7F0E3",
+          "textColor": "#244737",
+          "titleColor": "#0B3B2E",
+          "linkColor": "#115740",
+          "accentColor": "#ED8B00",
+          "secondaryBgColor": "#E3D1B5",
+          "secondaryTextColor": "#365949",
+          "secondaryTitleColor": "#115740",
+          "secondaryLinkColor": "#0B3B2E",
+          "secondaryAccentColor": "#97D700",
+          "successColor": "#2B7A3D",
+          "onSuccessColor": "#F7F0E3",
+          "errorColor": "#B42318",
+          "onErrorColor": "#FFF4ED",
+          "warningColor": "#ED8B00",
+          "onWarningColor": "#2C1900",
+          "infoColor": "#246B75",
+          "onInfoColor": "#F1FFFF"
+        },
+        "dark": {
+          "bgColor": "#F7F0E3",
+          "textColor": "#244737",
+          "titleColor": "#0B3B2E",
+          "linkColor": "#115740",
+          "accentColor": "#ED8B00",
+          "secondaryBgColor": "#E3D1B5",
+          "secondaryTextColor": "#365949",
+          "secondaryTitleColor": "#115740",
+          "secondaryLinkColor": "#0B3B2E",
+          "secondaryAccentColor": "#97D700",
+          "successColor": "#2B7A3D",
+          "onSuccessColor": "#F7F0E3",
+          "errorColor": "#B42318",
+          "onErrorColor": "#FFF4ED",
+          "warningColor": "#ED8B00",
+          "onWarningColor": "#2C1900",
+          "infoColor": "#246B75",
+          "onInfoColor": "#F1FFFF"
+        }
+      },
+      "ui": {
+        "modalAccentColor": "accentColor",
+        "legalModalAccentColor": "secondaryAccentColor",
+        "demoModalAccentColor": "accentColor"
+      }
+    },
+    "i18n": {
+      "defaultLanguage": "es",
+      "supportedLanguages": [
+        {
+          "code": "es",
+          "label": "ES",
+          "dir": "ltr",
+          "ogLocale": "es_MX"
+        }
+      ]
+    },
+    "seo": {
+      "siteName": "Greenstock",
+      "title": "Greenstock | Frutas y verduras listas para licuar",
+      "description": "Porciones congeladas y empacadas al vacío, listas para preparar una bebida de 250 ml de forma práctica en Ciudad de México.",
+      "defaultImage": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp",
+      "openGraph": {
+        "type": "website",
+        "site_name": "Greenstock",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "image": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp"
+      },
+      "keywords": {
+        "es": [
+          "Greenstock",
+          "frutas congeladas",
+          "verduras congeladas",
+          "listo para licuar",
+          "CDMX"
+        ]
+      },
+      "robots": {
+        "es": "noindex,nofollow"
+      }
+    },
+    "icons": {
+      "favicon": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-primary.png",
+      "appleTouchIcon": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-primary.png",
+      "themeColor": "#115740"
+    }
+  },
+  "runtime": {
+    "features": {
+      "debugMode": false
+    },
+    "navigation": {
+      "scrollRestoration": {
+        "mode": "top",
+        "behavior": "auto"
+      }
+    },
+    "analytics": {
+      "enabled": false,
+      "consentUI": "none"
+    },
+    "apiActions": [],
+    "dataSources": []
+  },
+  "sitemap": {
+    "excludePaths": [
+      "/404"
+    ]
+  }
+}

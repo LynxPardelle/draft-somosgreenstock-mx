@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "not-found",
+  "components": [
+    {
+      "id": "notFoundMain",
+      "type": "container",
+      "config": {
+        "id": "main-content",
+        "tag": "main",
+        "classes": "pageMain",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "scrollMarginTop": "128px"
+        },
+        "components": [
+          "notFoundSection"
+        ],
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "notFoundSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright ank-minHeight-68vh",
+        "components": [
+          "notFoundSplit"
+        ]
+      }
+    },
+    {
+      "id": "notFoundSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "notFoundCopy",
+          "notFoundLogo"
+        ]
+      }
+    },
+    {
+      "id": "notFoundCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "notFoundEyebrow",
+          "notFoundTitle",
+          "notFoundDescription",
+          "notFoundActions"
+        ]
+      }
+    },
+    {
+      "id": "notFoundEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Error 404",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "notFoundTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.title",
+      "config": {
+        "tag": "h1",
+        "text": "Esta mezcla no está en el menú.",
+        "classes": "displayTitle",
+        "styles": {
+          "fontSize": "clamp(2.2rem, 3.4vw, 4.25rem)",
+          "maxWidth": "20ch",
+          "lineHeight": "1.02"
+        }
+      }
+    },
+    {
+      "id": "notFoundDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.description",
+      "config": {
+        "tag": "p",
+        "text": "La página que buscabas cambió o no existe.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "notFoundActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "actionRow",
+        "components": [
+          "notFoundHome",
+          "notFoundMenu"
+        ]
+      }
+    },
+    {
+      "id": "notFoundHome",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.home",
+      "config": {
+        "href": "/",
+        "text": "Volver al inicio",
+        "classes": "primaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "notFoundMenu",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.menu",
+      "config": {
+        "href": "/menu",
+        "text": "Ver el menú",
+        "classes": "secondaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
+      }
+    },
+    {
+      "id": "notFoundLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-dark.png",
+        "alt": "Greenstock",
+        "width": 900,
+        "height": 500,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-contain",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain"
+        }
+      }
+    }
+  ]
+}
