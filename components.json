@@ -1,0 +1,284 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "allPages",
+  "components": [
+    {
+      "id": "skipToMainLink",
+      "type": "link",
+      "config": {
+        "href": "#main-content",
+        "text": "Saltar al contenido principal",
+        "classes": "skipLink"
+      }
+    },
+    {
+      "id": "siteHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "siteHeader",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif"
+        },
+        "components": [
+          "headerShell"
+        ]
+      }
+    },
+    {
+      "id": "headerShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "headerShell",
+        "components": [
+          "brandHomeLink",
+          "siteNav",
+          "headerOrderCta"
+        ]
+      }
+    },
+    {
+      "id": "brandHomeLink",
+      "type": "link",
+      "config": {
+        "href": "/",
+        "text": "",
+        "ariaLabel": "Greenstock, ir al inicio",
+        "classes": "brandHomeLink",
+        "components": [
+          "headerLogo"
+        ]
+      }
+    },
+    {
+      "id": "headerLogo",
+      "type": "media",
+      "valueInstructions": "set:config.src,var,brand.logoUrl;set:config.alt,i18n,ui.logoAlt",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-primary.png",
+        "alt": "Greenstock",
+        "width": 180,
+        "height": 64,
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "headerLogo"
+      }
+    },
+    {
+      "id": "siteNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "ariaLabel": "Navegación principal",
+        "classes": "siteNav",
+        "components": [
+          "navHome",
+          "navMenu",
+          "navImpact",
+          "navWholesale",
+          "navQuestions"
+        ]
+      }
+    },
+    {
+      "id": "navHome",
+      "type": "link",
+      "config": {
+        "href": "/",
+        "text": "Inicio",
+        "classes": "navLink"
+      }
+    },
+    {
+      "id": "navMenu",
+      "type": "link",
+      "config": {
+        "href": "/menu",
+        "text": "Menú",
+        "classes": "navLink"
+      }
+    },
+    {
+      "id": "navImpact",
+      "type": "link",
+      "config": {
+        "href": "/impacto",
+        "text": "Impacto",
+        "classes": "navLink"
+      }
+    },
+    {
+      "id": "navWholesale",
+      "type": "link",
+      "config": {
+        "href": "/mayoreo",
+        "text": "Mayoreo",
+        "classes": "navLink"
+      }
+    },
+    {
+      "id": "navQuestions",
+      "type": "link",
+      "config": {
+        "href": "/preguntas",
+        "text": "Preguntas",
+        "classes": "navLink"
+      }
+    },
+    {
+      "id": "headerOrderCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,ui.orderCta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pide ahora",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta"
+      }
+    },
+    {
+      "id": "siteFooter",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "classes": "siteFooter",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif"
+        },
+        "components": [
+          "footerShell"
+        ]
+      }
+    },
+    {
+      "id": "footerShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "footerShell",
+        "components": [
+          "footerBrand",
+          "footerNav",
+          "footerDisclaimer",
+          "footerInstagramCta"
+        ]
+      }
+    },
+    {
+      "id": "footerBrand",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "footerBrand",
+        "components": [
+          "footerPrimaryLogo",
+          "footerSlogan"
+        ]
+      }
+    },
+    {
+      "id": "footerPrimaryLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-cream.png",
+        "alt": "Greenstock",
+        "width": 220,
+        "height": 78,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "footerPrimaryLogo"
+      }
+    },
+    {
+      "id": "footerSlogan",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,ui.slogan",
+      "config": {
+        "tag": "p",
+        "text": "Fast, Fresh & Flavfull",
+        "classes": "footerSlogan"
+      }
+    },
+    {
+      "id": "footerNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "ariaLabel": "Navegación al pie",
+        "classes": "footerNav",
+        "components": [
+          "footerMenu",
+          "footerImpact",
+          "footerWholesale",
+          "footerQuestions"
+        ]
+      }
+    },
+    {
+      "id": "footerMenu",
+      "type": "link",
+      "config": {
+        "href": "/menu",
+        "text": "Menú",
+        "classes": "footerNavLink"
+      }
+    },
+    {
+      "id": "footerImpact",
+      "type": "link",
+      "config": {
+        "href": "/impacto",
+        "text": "Impacto",
+        "classes": "footerNavLink"
+      }
+    },
+    {
+      "id": "footerWholesale",
+      "type": "link",
+      "config": {
+        "href": "/mayoreo",
+        "text": "Mayoreo",
+        "classes": "footerNavLink"
+      }
+    },
+    {
+      "id": "footerQuestions",
+      "type": "link",
+      "config": {
+        "href": "/preguntas",
+        "text": "Preguntas",
+        "classes": "footerNavLink"
+      }
+    },
+    {
+      "id": "footerDisclaimer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,ui.disclaimer",
+      "config": {
+        "tag": "p",
+        "text": "La información nutricional y de bienestar presentada en este sitio es general y no sustituye la orientación médica o nutricional individual.",
+        "classes": "footerDisclaimer"
+      }
+    },
+    {
+      "id": "footerInstagramCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.contactUrl;set:config.text,i18n,ui.instagramCta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Escríbenos por Instagram",
+        "ariaLabel": "Contactar a Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta"
+      }
+    }
+  ]
+}

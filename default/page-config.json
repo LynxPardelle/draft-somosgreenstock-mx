@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "default",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "homeMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": {
+      "es": "Greenstock | Porciones listas para licuar en CDMX"
+    },
+    "description": {
+      "es": "Conoce Greenstock: porciones congeladas de frutas y verduras, empacadas al vacío y listas para preparar una bebida de 250 ml en tres pasos."
+    },
+    "robots": {
+      "es": "noindex,nofollow"
+    },
+    "openGraph": {
+      "type": {
+        "es": "website"
+      },
+      "title": {
+        "es": "Greenstock | Porciones listas para licuar en CDMX"
+      },
+      "description": {
+        "es": "Frutas y verduras congeladas, porcionadas y listas para licuar de forma práctica."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp"
+      }
+    },
+    "twitter": {
+      "card": {
+        "es": "summary_large_image"
+      },
+      "title": {
+        "es": "Greenstock | Porciones listas para licuar en CDMX"
+      },
+      "description": {
+        "es": "Descubre seis mezclas listas para convertir en una bebida de 250 ml."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp"
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Greenstock",
+        "logo": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-primary.png",
+        "sameAs": [
+          "https://www.instagram.com/greens.tock/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Greenstock",
+        "inLanguage": "es-MX",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Greenstock"
+        }
+      }
+    ]
+  }
+}

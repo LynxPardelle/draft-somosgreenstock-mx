@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "menu",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "hero": {
+        "eyebrow": "El menú Greenstock",
+        "title": "Seis mezclas. Una forma muy simple de prepararlas.",
+        "description": "Cada porción combina frutas y verduras congeladas, empacadas al vacío y listas para preparar una bebida de 250 ml.",
+        "cta": "Pide ahora"
+      },
+      "catalog": {
+        "title": "Encuentra tu mezcla.",
+        "description": "Todas las porciones tienen un precio al público de 40 MXN. Los ingredientes se muestran tal como fueron proporcionados por Greenstock."
+      },
+      "gallery": {
+        "eyebrow": "Míralas de cerca",
+        "title": "Ingredientes, color y empaque en cada collage.",
+        "description": "Desliza horizontalmente para recorrer las doce composiciones suministradas para las seis mezclas."
+      },
+      "price": {
+        "title": "Precio y pedido en CDMX",
+        "unit": "40 MXN por porción",
+        "minimum": "175 MXN de mínimo para entrega",
+        "note": "Pregunta por cobertura, horarios y opciones de recolección disponibles antes de confirmar.",
+        "cta": "Pedir por Instagram"
+      }
+    }
+  }
+}

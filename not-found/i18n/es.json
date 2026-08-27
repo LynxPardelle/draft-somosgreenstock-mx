@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "not-found",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "eyebrow": "Error 404",
+      "title": "Esta mezcla no está en el menú.",
+      "description": "La página que buscabas cambió o no existe. Puedes volver al inicio o conocer las seis mezclas Greenstock.",
+      "home": "Volver al inicio",
+      "menu": "Ver el menú"
+    }
+  }
+}

@@ -1,0 +1,621 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "mayoreo",
+  "components": [
+    {
+      "id": "wholesaleMain",
+      "type": "container",
+      "config": {
+        "id": "main-content",
+        "tag": "main",
+        "classes": "pageMain",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif"
+        },
+        "components": [
+          "wholesaleHero",
+          "wholesaleValue",
+          "wholesaleTiers",
+          "wholesaleMedia",
+          "wholesaleFinal"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionDark",
+        "components": [
+          "wholesaleHeroSplit"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleHeroSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "wholesaleHeroCopy",
+          "wholesaleHeroImage"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "wholesaleBrandAccent",
+          "wholesaleHeroEyebrow",
+          "wholesaleHeroTitle",
+          "wholesaleHeroDescription",
+          "wholesaleHeroCta"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Greenstock para negocios",
+        "classes": "ank-m-0 ank-color-secondaryAccentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "wholesaleHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "Una bebida lista para entrar a tu operación.",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2_5rem ank-fontSize-md-4_5rem ank-fontWeight-900 ank-lineHeight-0_98"
+      }
+    },
+    {
+      "id": "wholesaleHeroDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.description",
+      "config": {
+        "tag": "p",
+        "text": "Porciones individuales para negocios y programas corporativos.",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_08rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "wholesaleHeroCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.wholesaleUrl;set:config.text,i18n,page.hero.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Solicita mayoreo",
+        "ariaLabel": "Solicitar mayoreo Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent"
+      }
+    },
+    {
+      "id": "wholesaleHeroImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-detail-03.webp",
+        "alt": "Detalle del empaque al vacío Greenstock",
+        "width": 1200,
+        "height": 1000,
+        "loading": "eager",
+        "decoding": "async",
+        "classes": "galleryImage",
+        "fetchPriority": "high",
+        "sizes": "(min-width: 768px) 50vw, 100vw"
+      }
+    },
+    {
+      "id": "wholesaleValue",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "wholesaleValueContent"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleValueContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "wholesaleValueEyebrow",
+          "wholesaleValueTitle",
+          "wholesaleValueDescription",
+          "wholesaleThreeSteps"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleValueEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.value.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Menos preparación",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "wholesaleValueTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.value.title",
+      "config": {
+        "tag": "h2",
+        "text": "Porciones claras, mezclas consistentes y servicio más ágil.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "wholesaleValueDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.value.description",
+      "config": {
+        "tag": "p",
+        "text": "Abre, agrega líquido y licúa una bebida de 250 ml.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "wholesaleThreeSteps",
+      "type": "container",
+      "config": {
+        "tag": "ol",
+        "classes": "stepGrid ank-listStyle-none ank-padding-0 ank-margin-0",
+        "components": [
+          "wholesaleStepOpen",
+          "wholesaleStepLiquid",
+          "wholesaleStepBlend"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleStepOpen",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "01 · Abre la porción",
+        "classes": "stepItem compactTitle"
+      }
+    },
+    {
+      "id": "wholesaleStepLiquid",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "02 · Agrega líquido",
+        "classes": "stepItem compactTitle"
+      }
+    },
+    {
+      "id": "wholesaleStepBlend",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "03 · Licúa y sirve",
+        "classes": "stepItem compactTitle"
+      }
+    },
+    {
+      "id": "wholesaleTiers",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSection",
+        "components": [
+          "wholesaleTiersContent"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleTiersContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "wholesaleTiersTitle",
+          "wholesaleTiersDescription",
+          "wholesaleTierBand"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleTiersTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.title",
+      "config": {
+        "tag": "h2",
+        "text": "Precios por volumen",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "wholesaleTiersDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.description",
+      "config": {
+        "tag": "p",
+        "text": "Tarifas unitarias suministradas por Greenstock.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "wholesaleTierBand",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "priceBand",
+        "components": [
+          "wholesaleTierFifty",
+          "wholesaleTierFiveHundred",
+          "wholesaleTierThousand"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleTierFifty",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "priceItem",
+        "components": [
+          "wholesaleTierFiftyQuantity",
+          "wholesaleTierFiftyPrice"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleTierFiftyQuantity",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.fifty.quantity",
+      "config": {
+        "tag": "h3",
+        "text": "Desde 50 piezas",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "wholesaleTierFiftyPrice",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.fifty.price",
+      "config": {
+        "tag": "p",
+        "text": "37 MXN por pieza",
+        "classes": "priceValue"
+      }
+    },
+    {
+      "id": "wholesaleTierFiveHundred",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "priceItem",
+        "components": [
+          "wholesaleTierFiveHundredQuantity",
+          "wholesaleTierFiveHundredPrice"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleTierFiveHundredQuantity",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.fiveHundred.quantity",
+      "config": {
+        "tag": "h3",
+        "text": "Desde 500 piezas",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "wholesaleTierFiveHundredPrice",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.fiveHundred.price",
+      "config": {
+        "tag": "p",
+        "text": "35 MXN por pieza",
+        "classes": "priceValue"
+      }
+    },
+    {
+      "id": "wholesaleTierThousand",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "priceItem",
+        "components": [
+          "wholesaleTierThousandQuantity",
+          "wholesaleTierThousandPrice"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleTierThousandQuantity",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.thousand.quantity",
+      "config": {
+        "tag": "h3",
+        "text": "Desde 1,000 piezas",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "wholesaleTierThousandPrice",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.tiers.thousand.price",
+      "config": {
+        "tag": "p",
+        "text": "30 MXN por pieza",
+        "classes": "priceValue"
+      }
+    },
+    {
+      "id": "wholesaleMedia",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionWarm",
+        "components": [
+          "wholesaleMediaContent"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleMediaContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "wholesaleMediaEyebrow",
+          "wholesaleMediaTitle",
+          "wholesaleMediaDescription",
+          "wholesaleGalleryInstruction",
+          "wholesalePackageRail",
+          "wholesaleVideoFigure"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleMediaEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.media.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Conoce el formato",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "wholesaleMediaTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.media.title",
+      "config": {
+        "tag": "h2",
+        "text": "Un producto pensado para ocupar poco tiempo en barra.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "wholesaleMediaDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.media.description",
+      "config": {
+        "tag": "p",
+        "text": "Recorre fotografías del empaque y su presentación.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "wholesalePackageRail",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "assets.packagePhotos",
+        "templateId": "wholesalePackageTemplate",
+        "idPrefix": "wholesalePackage",
+        "bindings": [
+          {
+            "to": "config.src",
+            "sources": [
+              "url"
+            ]
+          },
+          {
+            "to": "config.alt",
+            "sources": [
+              "alt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "ariaLabel": "Galería horizontal de fotografías del empaque Greenstock",
+        "classes": "horizontalGallery",
+        "components": [],
+        "role": "region",
+        "tabindex": 0,
+        "ariaDescribedby": "wholesaleGalleryInstruction"
+      }
+    },
+    {
+      "id": "wholesalePackageTemplate",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "width": 1000,
+        "height": 900,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "galleryImage"
+      }
+    },
+    {
+      "id": "wholesaleVideoFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "ank-m-0 ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "wholesaleVideoPoster",
+          "wholesaleVideoLoadLabel",
+          "wholesaleVideo",
+          "wholesaleVideoCaption"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleVideo",
+      "type": "media",
+      "config": {
+        "tag": "video",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-product-03.mp4",
+        "alt": "",
+        "classes": "videoMedia",
+        "styles": {
+          "width": "100%"
+        },
+        "controls": true,
+        "preload": "none",
+        "autoplay": false,
+        "ariaLabel": "Reproducir demostración visual del producto Greenstock"
+      }
+    },
+    {
+      "id": "wholesaleVideoCaption",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.media.caption",
+      "config": {
+        "tag": "figcaption",
+        "text": "Descripción completa del video sin audio: recorrido vertical por recipientes con piña, pepino, hojas verdes y jengibre. No contiene narración ni información adicional.",
+        "classes": "figureCaption"
+      }
+    },
+    {
+      "id": "wholesaleFinal",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "wholesaleFinalContent"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleFinalContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "wholesaleFinalTitle",
+          "wholesaleFinalDescription",
+          "wholesaleFinalCta"
+        ]
+      }
+    },
+    {
+      "id": "wholesaleFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.final.title",
+      "config": {
+        "tag": "h2",
+        "text": "Cuéntanos qué tipo de operación tienes.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "wholesaleFinalDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.final.description",
+      "config": {
+        "tag": "p",
+        "text": "Greenstock coordina conversaciones de mayoreo en CDMX.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "wholesaleFinalCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.wholesaleUrl;set:config.text,i18n,page.final.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Solicita mayoreo",
+        "ariaLabel": "Solicitar mayoreo Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent"
+      }
+    },
+    {
+      "id": "wholesaleBrandAccent",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-cream.png",
+        "alt": "",
+        "width": 160,
+        "height": 160,
+        "loading": "lazy",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain"
+      }
+    },
+    {
+      "id": "wholesaleGalleryInstruction",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "id": "wholesaleGalleryInstruction",
+        "text": "Desliza horizontalmente o usa las teclas de flecha cuando la galería tenga el foco.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "wholesaleVideoPoster",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/videos/greenstock-product-03-poster.webp",
+        "alt": "Vista previa vertical de recipientes con piña, pepino, hojas verdes y jengibre",
+        "width": 720,
+        "height": 1280,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px"
+      }
+    },
+    {
+      "id": "wholesaleVideoLoadLabel",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Reproducción opcional: usa el control Reproducir para cargar el video.",
+        "classes": "bodyCopy"
+      }
+    }
+  ]
+}

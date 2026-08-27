@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "allPages",
+  "combos": {
+    "skipLink": [
+      "ank-position-fixed ank-top-8px ank-left-8px ank-zIndex-9999 ank-paddingInline-16px ank-paddingBlock-12px ank-minHeight-48px ank-display-flex ank-alignItems-center ank-bg-accentColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-borderRadius-4px focusRing"
+    ],
+    "siteHeader": [
+      "ank-position-sticky ank-top-0 ank-zIndex-100 ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-borderBottom-1px__solid__secondaryAccentColor ank-paddingInline-16px"
+    ],
+    "headerShell": [
+      "ank-width-100per ank-maxWidth-1240px ank-minHeight-76px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-16px ank-flexWrap-wrap ank-paddingBlock-10px"
+    ],
+    "brandHomeLink": [
+      "ank-display-inlineFlex ank-alignItems-center ank-minHeight-48px ank-textDecoration-none ank-borderRadius-4px focusRing"
+    ],
+    "headerLogo": [
+      "ank-display-block ank-width-150px ank-width-md-180px ank-height-auto ank-objectFit-contain"
+    ],
+    "siteNav": [
+      "ank-order-3 ank-order-lg-2 ank-width-100per ank-width-lg-auto ank-display-flex ank-alignItems-center ank-gap-4px ank-overflowX-auto ank-paddingBottom-6px ank-paddingBottom-lg-0"
+    ],
+    "navLink": [
+      "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-12px ank-color-titleColor ank-fontSize-0_9rem ank-fontWeight-800 ank-whiteSpace-nowrap ank-textDecoration-none ank-bgHover-secondaryBgColor ank-borderRadius-4px focusRing"
+    ],
+    "primaryCta": [
+      "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-20px ank-paddingBlock-12px ank-bg-accentColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-letterSpacing-0_01em ank-borderRadius-4px ank-boxShadow-0__10px__24px__accentColor__OPA__0_22 ank-transformHover-translateYMIN2px focusRing"
+    ],
+    "secondaryCta": [
+      "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-20px ank-paddingBlock-12px ank-border-2px__solid__linkColor ank-color-linkColor ank-bg-transparent ank-fontWeight-900 ank-textDecoration-none ank-borderRadius-4px focusRing"
+    ],
+    "siteFooter": [
+      "ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-titleColor ank-color-bgColor ank-paddingInline-18px ank-paddingBlock-56px"
+    ],
+    "footerShell": [
+      "ank-width-100per ank-maxWidth-1240px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-1fr__1fr ank-gap-28px"
+    ],
+    "footerBrand": [
+      "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-10px"
+    ],
+    "footerPrimaryLogo": [
+      "ank-display-block ank-width-200px ank-height-auto ank-objectFit-contain"
+    ],
+    "footerSlogan": [
+      "ank-m-0 ank-color-secondaryAccentColor ank-fontWeight-900 ank-letterSpacing-0_04em"
+    ],
+    "footerNav": [
+      "ank-display-flex ank-alignItems-center ank-flexWrap-wrap ank-gap-8px"
+    ],
+    "footerNavLink": [
+      "ank-display-inlineFlex ank-alignItems-center ank-minHeight-44px ank-paddingInline-10px ank-color-bgColor ank-fontWeight-800 ank-textDecoration-none ank-borderRadius-4px focusRing"
+    ],
+    "footerDisclaimer": [
+      "ank-m-0 ank-maxWidth-76ch ank-color-secondaryBgColor ank-fontSize-0_82rem ank-lineHeight-1_6"
+    ],
+    "pageMain": [
+      "ank-width-100per ank-minWidth-0 ank-overflowX-hidden ank-bg-bgColor ank-color-textColor"
+    ],
+    "marketSection": [
+      "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-18px ank-paddingBlock-68px ank-paddingBlock-md-96px"
+    ],
+    "marketSectionDark": [
+      "marketSection ank-bg-titleColor ank-color-bgColor"
+    ],
+    "marketSectionBright": [
+      "marketSection ank-bg-secondaryAccentColor ank-color-titleColor"
+    ],
+    "marketSectionWarm": [
+      "marketSection ank-bg-secondaryBgColor ank-color-titleColor"
+    ],
+    "marketContent": [
+      "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px"
+    ],
+    "marketSplit": [
+      "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-1fr__1fr ank-alignItems-center ank-gap-32px ank-gap-lg-56px"
+    ],
+    "eyebrow": [
+      "ank-m-0 ank-width-fitContent ank-color-linkColor ank-fontSize-0_78rem ank-fontWeight-900 ank-letterSpacing-0_12em ank-textTransform-uppercase"
+    ],
+    "displayTitle": [
+      "ank-m-0 ank-maxWidth-16ch ank-color-titleColor ank-fontSize-2_4rem ank-fontSize-md-4_6rem ank-fontWeight-900 ank-lineHeight-0_98 ank-letterSpacing-MIN0_04em"
+    ],
+    "sectionTitle": [
+      "ank-m-0 ank-maxWidth-18ch ank-color-titleColor ank-fontSize-2rem ank-fontSize-md-3_2rem ank-fontWeight-900 ank-lineHeight-1_02 ank-letterSpacing-MIN0_03em"
+    ],
+    "bodyLead": [
+      "ank-m-0 ank-maxWidth-64ch ank-color-secondaryTitleColor ank-fontSize-1_05rem ank-fontSize-md-1_22rem ank-lineHeight-1_65"
+    ],
+    "bodyCopy": [
+      "ank-m-0 ank-maxWidth-68ch ank-color-textColor ank-fontSize-1rem ank-lineHeight-1_7"
+    ],
+    "actionRow": [
+      "ank-display-flex ank-alignItems-center ank-flexWrap-wrap ank-gap-12px"
+    ],
+    "mediaFrame": [
+      "ank-width-100per ank-minWidth-0 ank-overflow-hidden ank-borderRadius-4px ank-bg-secondaryBgColor"
+    ],
+    "imageCover": [
+      "ank-display-block ank-width-100per ank-height-100per ank-minHeight-320px ank-objectFit-cover"
+    ],
+    "videoMedia": [
+      "ank-display-block ank-width-100per ank-maxWidth-960px ank-bg-titleColor ank-borderRadius-4px"
+    ],
+    "figureCaption": [
+      "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_88rem ank-lineHeight-1_55"
+    ],
+    "horizontalGallery": [
+      "ank-width-100per ank-display-grid ank-gridAutoFlow-column ank-gridAutoColumns-minmaxSD260pxCOM34vwED ank-gap-14px ank-overflowX-auto ank-paddingBottom-14px ank-scrollSnapType-x__mandatory"
+    ],
+    "galleryImage": [
+      "ank-display-block ank-width-100per ank-height-360px ank-objectFit-cover ank-borderRadius-4px ank-scrollSnapAlign-start ank-transformHover-translateYMIN3px"
+    ],
+    "productGrid": [
+      "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-18px"
+    ],
+    "productCard": [
+      "ank-width-100per ank-minWidth-0 ank-bg-bgColor ank-border-2px__solid__secondaryAccentColor ank-padding-24px ank-display-flex ank-flexDirection-column ank-gap-12px ank-borderRadius-4px"
+    ],
+    "stepGrid": [
+      "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COM1frED ank-gap-0"
+    ],
+    "stepItem": [
+      "ank-padding-24px ank-borderTop-2px__solid__titleColor ank-display-flex ank-flexDirection-column ank-gap-10px"
+    ],
+    "stepNumber": [
+      "ank-m-0 ank-color-accentColor ank-fontSize-2_8rem ank-fontWeight-900 ank-lineHeight-1"
+    ],
+    "compactTitle": [
+      "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-900 ank-lineHeight-1_2"
+    ],
+    "priceBand": [
+      "ank-display-flex ank-flexWrap-wrap ank-gap-18px ank-paddingBlock-20px ank-borderTop-2px__solid__titleColor ank-borderBottom-2px__solid__titleColor"
+    ],
+    "priceItem": [
+      "ank-flex-1 ank-minWidth-180px ank-display-flex ank-flexDirection-column ank-gap-6px"
+    ],
+    "priceValue": [
+      "ank-m-0 ank-color-titleColor ank-fontSize-2rem ank-fontWeight-900"
+    ],
+    "focusRing": [
+      "ank-outlineFocus-3px__solid__titleColor ank-outlineOffsetFocus-2px ank-boxShadowFocus-0__0__0__6px__bgColor"
+    ],
+    "productDecision": [
+      "ank-width-100per ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD240pxCOM0_8frED__minmaxSD0COM1_2frED ank-gap-0 ank-overflow-hidden ank-borderBottom-2px__solid__secondaryAccentColor"
+    ],
+    "productDecisionImage": [
+      "ank-display-block ank-width-100per ank-height-320px ank-height-md-420px ank-objectFit-cover"
+    ],
+    "productDecisionCopy": [
+      "ank-display-flex ank-flexDirection-column ank-justifyContent-center ank-gap-12px ank-padding-24px ank-padding-md-36px"
+    ]
+  }
+}

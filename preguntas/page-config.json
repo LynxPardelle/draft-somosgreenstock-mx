@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "preguntas",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "questionsMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": {
+      "es": "Preguntas Greenstock | Preparación, entrega y pedido"
+    },
+    "description": {
+      "es": "Resuelve dudas sobre preparación, congelación, fibra, conservación, recolección, entrega en CDMX y la forma actual de pedir Greenstock."
+    },
+    "robots": {
+      "es": "noindex,nofollow"
+    },
+    "openGraph": {
+      "type": {
+        "es": "website"
+      },
+      "title": {
+        "es": "Preguntas Greenstock | Preparación, entrega y pedido"
+      },
+      "description": {
+        "es": "Información útil para preparar, conservar y solicitar porciones Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-question-03.webp"
+      }
+    },
+    "twitter": {
+      "card": {
+        "es": "summary_large_image"
+      },
+      "title": {
+        "es": "Preguntas Greenstock | Preparación, entrega y pedido"
+      },
+      "description": {
+        "es": "Lo esencial antes de preparar o pedir Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-question-03.webp"
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo preparo una porción Greenstock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Abre la porción congelada, agrega el líquido que prefieras y licúa hasta obtener la textura deseada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto rinde cada porción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cada porción está pensada para preparar una bebida de 250 ml."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Las porciones contienen la fruta y verdura completas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las mezclas se presentan listas para licuar, por lo que conservan la fibra de sus ingredientes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde opera Greenstock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La propuesta de recolección y entrega del borrador se concentra en Ciudad de México y debe confirmarse al pedir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál es el pedido mínimo para entrega?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El mínimo informado por el cliente para entrega es de 175 MXN."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo conservo las porciones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mantén las porciones congeladas y sigue las indicaciones visibles en el empaque."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo hago un pedido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mientras se confirma el canal definitivo, los pedidos se coordinan en el Instagram autorizado de Greenstock."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

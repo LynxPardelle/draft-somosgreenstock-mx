@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "mayoreo",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "wholesaleMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": {
+      "es": "Mayoreo Greenstock | Porciones para tu negocio"
+    },
+    "description": {
+      "es": "Consulta precios de mayoreo Greenstock para gimnasios, cafeterías, clínicas, tiendas naturales y programas corporativos en Ciudad de México."
+    },
+    "robots": {
+      "es": "noindex,nofollow"
+    },
+    "openGraph": {
+      "type": {
+        "es": "website"
+      },
+      "title": {
+        "es": "Mayoreo Greenstock | Porciones para tu negocio"
+      },
+      "description": {
+        "es": "Tres escalas de volumen para integrar mezclas listas para licuar a tu operación."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-detail-03.webp"
+      }
+    },
+    "twitter": {
+      "card": {
+        "es": "summary_large_image"
+      },
+      "title": {
+        "es": "Mayoreo Greenstock | Porciones para tu negocio"
+      },
+      "description": {
+        "es": "Precios por volumen y contacto directo para alianzas Greenstock."
+      },
+      "image": {
+        "es": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-detail-03.webp"
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mayoreo Greenstock",
+        "areaServed": "Ciudad de México",
+        "description": "Porciones Greenstock listas para licuar, disponibles para conversaciones de mayoreo con negocios y programas corporativos.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Greenstock"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Desde 50 piezas",
+            "price": 37,
+            "priceCurrency": "MXN"
+          },
+          {
+            "@type": "Offer",
+            "name": "Desde 500 piezas",
+            "price": 35,
+            "priceCurrency": "MXN"
+          },
+          {
+            "@type": "Offer",
+            "name": "Desde 1,000 piezas",
+            "price": 30,
+            "priceCurrency": "MXN"
+          }
+        ]
+      }
+    ]
+  }
+}
