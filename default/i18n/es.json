@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "default",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "hero": {
+        "eyebrow": "Frutas y verduras listas para licuar",
+        "title": "Tu mezcla diaria ya está lista.",
+        "description": "Porciones congeladas y empacadas al vacío con ingredientes listos para preparar una bebida de 250 ml. Abre, agrega líquido y licúa.",
+        "primary": "Pide ahora",
+        "secondary": "Ver menú",
+        "imageAlt": "Porción Greenstock congelada y empacada al vacío"
+      },
+      "steps": {
+        "eyebrow": "Así de simple",
+        "title": "Tres pasos entre tu congelador y tu vaso.",
+        "intro": "Cada porción reúne frutas y verduras previamente preparadas para reducir el tiempo y el desperdicio de tu rutina.",
+        "open": {
+          "number": "01",
+          "title": "Abre",
+          "description": "Saca una porción congelada y abre el empaque."
+        },
+        "liquid": {
+          "number": "02",
+          "title": "Agrega líquido",
+          "description": "Completa la mezcla con el líquido de tu elección."
+        },
+        "blend": {
+          "number": "03",
+          "title": "Licúa",
+          "description": "Licúa, sirve una bebida de 250 ml y disfruta al momento."
+        }
+      },
+      "catalog": {
+        "eyebrow": "Seis mezclas",
+        "title": "Un color y una combinación para cada antojo.",
+        "description": "Conoce Verde Detox, Green Fresh, Kale Vibes, Lemon Fit, Mint Pop y Fruit Splash.",
+        "link": "Explorar el menú completo"
+      },
+      "process": {
+        "eyebrow": "La porción completa",
+        "title": "Conveniencia sin separar la fibra.",
+        "description": "Greenstock presenta frutas y verduras en una porción congelada lista para licuar. La mezcla se transforma completa en tu vaso, sin pasar por un extractor.",
+        "caption": "Descripción completa del video sin audio: recorrido horizontal por recipientes con piña, hierbas y otros ingredientes preparados. No contiene narración ni información adicional."
+      },
+      "impact": {
+        "eyebrow": "Algo bueno detrás de cada porción",
+        "title": "Una operación que busca abrir oportunidades.",
+        "description": "Además de facilitar una rutina práctica, Greenstock impulsa un modelo de empleo incluyente. Conoce el propósito y la forma en que el proyecto quiere crecer.",
+        "link": "Conocer nuestro impacto"
+      },
+      "wholesale": {
+        "eyebrow": "Para negocios",
+        "title": "Una opción lista para sumar a tu operación.",
+        "description": "Gimnasios, cafeterías, clínicas, tiendas naturales y programas corporativos pueden solicitar precios por volumen y coordinar una propuesta para CDMX.",
+        "link": "Ver mayoreo"
+      },
+      "questions": {
+        "eyebrow": "Antes de pedir",
+        "title": "Preparación, conservación y entrega, explicadas.",
+        "description": "Encuentra respuestas sobre cómo usar las porciones y cómo confirmar recolección o entrega en Ciudad de México.",
+        "link": "Resolver preguntas"
+      },
+      "final": {
+        "title": "Elige tu mezcla y escríbenos.",
+        "description": "La porción cuesta 40 MXN. Para entrega, el mínimo informado es de 175 MXN; confirma cobertura y alternativas de recolección directamente en Instagram.",
+        "cta": "Pide ahora"
+      }
+    }
+  }
+}

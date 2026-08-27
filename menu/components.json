@@ -1,0 +1,803 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "menu",
+  "components": [
+    {
+      "id": "menuMain",
+      "type": "container",
+      "config": {
+        "id": "main-content",
+        "tag": "main",
+        "classes": "pageMain",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif"
+        },
+        "components": [
+          "menuHero",
+          "menuCatalog",
+          "menuGallery",
+          "menuPrice"
+        ]
+      }
+    },
+    {
+      "id": "menuHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionDark",
+        "components": [
+          "menuHeroSplit"
+        ]
+      }
+    },
+    {
+      "id": "menuHeroSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "menuHeroCopy",
+          "menuHeroImage"
+        ]
+      }
+    },
+    {
+      "id": "menuHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "menuBrandAccent",
+          "menuHeroEyebrow",
+          "menuHeroTitle",
+          "menuHeroDescription",
+          "menuHeroCta"
+        ]
+      }
+    },
+    {
+      "id": "menuHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "El menú Greenstock",
+        "classes": "ank-m-0 ank-color-secondaryAccentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "menuHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "Seis mezclas. Una forma muy simple de prepararlas.",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2_5rem ank-fontSize-md-4_5rem ank-fontWeight-900 ank-lineHeight-0_98"
+      }
+    },
+    {
+      "id": "menuHeroDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.description",
+      "config": {
+        "tag": "p",
+        "text": "Porciones para preparar una bebida de 250 ml.",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "menuHeroCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,page.hero.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pide ahora",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent"
+      }
+    },
+    {
+      "id": "menuHeroImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-serving-05.webp",
+        "alt": "Porción Greenstock junto a una bebida preparada",
+        "width": 1200,
+        "height": 1000,
+        "loading": "eager",
+        "decoding": "async",
+        "classes": "galleryImage",
+        "fetchPriority": "high",
+        "sizes": "(min-width: 768px) 50vw, 100vw"
+      }
+    },
+    {
+      "id": "menuCatalog",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSection",
+        "components": [
+          "menuCatalogContent"
+        ]
+      }
+    },
+    {
+      "id": "menuCatalogContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "menuCatalogTitle",
+          "menuCatalogDescription",
+          "menuProductGrid"
+        ]
+      }
+    },
+    {
+      "id": "menuCatalogTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.title",
+      "config": {
+        "tag": "h2",
+        "text": "Encuentra tu mezcla.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "menuCatalogDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.description",
+      "config": {
+        "tag": "p",
+        "text": "Todas las porciones tienen un precio al público de 40 MXN.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "menuProductGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-24px",
+        "components": [
+          "menuProduct-verde-detox",
+          "menuProduct-green-fresh",
+          "menuProduct-kale-vibes",
+          "menuProduct-lemon-fit",
+          "menuProduct-mint-pop",
+          "menuProduct-fruit-splash"
+        ]
+      }
+    },
+    {
+      "id": "menuGallery",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionWarm",
+        "components": [
+          "menuGalleryContent"
+        ]
+      }
+    },
+    {
+      "id": "menuGalleryContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "menuGalleryEyebrow",
+          "menuGalleryTitle",
+          "menuGalleryDescription",
+          "menuGalleryInstruction",
+          "menuCollageRail"
+        ]
+      }
+    },
+    {
+      "id": "menuGalleryEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.gallery.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Míralas de cerca",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "menuGalleryTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.gallery.title",
+      "config": {
+        "tag": "h2",
+        "text": "Ingredientes, color y empaque en cada collage.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "menuGalleryDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.gallery.description",
+      "config": {
+        "tag": "p",
+        "text": "Desliza para recorrer las doce composiciones.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "menuCollageRail",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "assets.productCollages",
+        "templateId": "menuCollageTemplate",
+        "idPrefix": "menuCollage",
+        "bindings": [
+          {
+            "to": "config.src",
+            "sources": [
+              "url"
+            ]
+          },
+          {
+            "to": "config.alt",
+            "sources": [
+              "alt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "ariaLabel": "Galería horizontal de collages de productos Greenstock",
+        "classes": "horizontalGallery",
+        "components": [],
+        "role": "region",
+        "tabindex": 0,
+        "ariaDescribedby": "menuGalleryInstruction"
+      }
+    },
+    {
+      "id": "menuCollageTemplate",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "width": 900,
+        "height": 1100,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 78vw",
+        "classes": "galleryImage"
+      }
+    },
+    {
+      "id": "menuPrice",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "menuPriceContent"
+        ]
+      }
+    },
+    {
+      "id": "menuPriceContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "menuPriceTitle",
+          "menuPriceBand",
+          "menuPriceNote",
+          "menuPriceCta"
+        ]
+      }
+    },
+    {
+      "id": "menuPriceTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.price.title",
+      "config": {
+        "tag": "h2",
+        "text": "Precio y pedido en CDMX",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "menuPriceBand",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "priceBand",
+        "components": [
+          "menuUnitPrice",
+          "menuDeliveryMinimum"
+        ]
+      }
+    },
+    {
+      "id": "menuUnitPrice",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.price.unit",
+      "config": {
+        "tag": "p",
+        "text": "40 MXN por porción",
+        "classes": "priceValue"
+      }
+    },
+    {
+      "id": "menuDeliveryMinimum",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.price.minimum",
+      "config": {
+        "tag": "p",
+        "text": "175 MXN de mínimo para entrega",
+        "classes": "priceValue"
+      }
+    },
+    {
+      "id": "menuPriceNote",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.price.note",
+      "config": {
+        "tag": "p",
+        "text": "Pregunta por cobertura y opciones de recolección antes de confirmar.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "menuPriceCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.orderUrl;set:config.text,i18n,page.price.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Pedir por Instagram",
+        "ariaLabel": "Pedir Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent"
+      }
+    },
+    {
+      "id": "menuBrandAccent",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-wordmark-dark.png",
+        "alt": "",
+        "width": 160,
+        "height": 160,
+        "loading": "lazy",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain"
+      }
+    },
+    {
+      "id": "menuProduct-verde-detox",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "productDecision",
+        "components": [
+          "menuProduct-verde-detox-image",
+          "menuProduct-verde-detox-copy"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-verde-detox-image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/verde-detox-01.webp",
+        "alt": "Collage de ingredientes y empaque de Verde Detox",
+        "width": 1080,
+        "height": 1920,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 100vw",
+        "classes": "productDecisionImage"
+      }
+    },
+    {
+      "id": "menuProduct-verde-detox-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "productDecisionCopy",
+        "components": [
+          "menuProduct-verde-detox-title",
+          "menuProduct-verde-detox-description",
+          "menuProduct-verde-detox-ingredients"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-verde-detox-title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Verde Detox",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "menuProduct-verde-detox-description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Una mezcla verde con piña, nopal y hierbas frescas.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "menuProduct-verde-detox-ingredients",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes: espinaca, pepino, perejil, nopal, apio, piña.",
+        "classes": "bodyCopy ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "menuProduct-green-fresh",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "productDecision",
+        "components": [
+          "menuProduct-green-fresh-image",
+          "menuProduct-green-fresh-copy"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-green-fresh-image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/green-fresh-01.webp",
+        "alt": "Collage de ingredientes y empaque de Green Fresh",
+        "width": 1080,
+        "height": 1920,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 100vw",
+        "classes": "productDecisionImage"
+      }
+    },
+    {
+      "id": "menuProduct-green-fresh-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "productDecisionCopy",
+        "components": [
+          "menuProduct-green-fresh-title",
+          "menuProduct-green-fresh-description",
+          "menuProduct-green-fresh-ingredients"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-green-fresh-title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Green Fresh",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "menuProduct-green-fresh-description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Pepino, apio y manzana verde en una porción práctica.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "menuProduct-green-fresh-ingredients",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes: pepino, apio, manzana verde.",
+        "classes": "bodyCopy ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "menuProduct-kale-vibes",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "productDecision",
+        "components": [
+          "menuProduct-kale-vibes-image",
+          "menuProduct-kale-vibes-copy"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-kale-vibes-image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/kale-vibes-01.webp",
+        "alt": "Collage de ingredientes y empaque de Kale Vibes",
+        "width": 1080,
+        "height": 1920,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 100vw",
+        "classes": "productDecisionImage"
+      }
+    },
+    {
+      "id": "menuProduct-kale-vibes-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "productDecisionCopy",
+        "components": [
+          "menuProduct-kale-vibes-title",
+          "menuProduct-kale-vibes-description",
+          "menuProduct-kale-vibes-ingredients"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-kale-vibes-title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Kale Vibes",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "menuProduct-kale-vibes-description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Piña, kale y jengibre listos para transformar en bebida.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "menuProduct-kale-vibes-ingredients",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes: piña, kale, jengibre.",
+        "classes": "bodyCopy ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "menuProduct-lemon-fit",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "productDecision",
+        "components": [
+          "menuProduct-lemon-fit-image",
+          "menuProduct-lemon-fit-copy"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-lemon-fit-image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/lemon-fit-01.webp",
+        "alt": "Collage de ingredientes y empaque de Lemon Fit",
+        "width": 1080,
+        "height": 1920,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 100vw",
+        "classes": "productDecisionImage"
+      }
+    },
+    {
+      "id": "menuProduct-lemon-fit-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "productDecisionCopy",
+        "components": [
+          "menuProduct-lemon-fit-title",
+          "menuProduct-lemon-fit-description",
+          "menuProduct-lemon-fit-ingredients"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-lemon-fit-title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Lemon Fit",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "menuProduct-lemon-fit-description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Limón, apio y manzana verde en una mezcla de sabor directo.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "menuProduct-lemon-fit-ingredients",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes: limón, apio, manzana verde.",
+        "classes": "bodyCopy ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "menuProduct-mint-pop",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "productDecision",
+        "components": [
+          "menuProduct-mint-pop-image",
+          "menuProduct-mint-pop-copy"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-mint-pop-image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/mint-pop-01.webp",
+        "alt": "Collage de ingredientes y empaque de Mint Pop",
+        "width": 1080,
+        "height": 1920,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 100vw",
+        "classes": "productDecisionImage"
+      }
+    },
+    {
+      "id": "menuProduct-mint-pop-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "productDecisionCopy",
+        "components": [
+          "menuProduct-mint-pop-title",
+          "menuProduct-mint-pop-description",
+          "menuProduct-mint-pop-ingredients"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-mint-pop-title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Mint Pop",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "menuProduct-mint-pop-description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Pepino, melón, menta y limón para una combinación fresca.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "menuProduct-mint-pop-ingredients",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes: pepino, melón, menta, limón.",
+        "classes": "bodyCopy ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "menuProduct-fruit-splash",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "productDecision",
+        "components": [
+          "menuProduct-fruit-splash-image",
+          "menuProduct-fruit-splash-copy"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-fruit-splash-image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/product-collages/fruit-splash-01.webp",
+        "alt": "Collage de ingredientes y empaque de Fruit Splash",
+        "width": 1080,
+        "height": 1920,
+        "loading": "lazy",
+        "decoding": "async",
+        "sizes": "(min-width: 768px) 34vw, 100vw",
+        "classes": "productDecisionImage"
+      }
+    },
+    {
+      "id": "menuProduct-fruit-splash-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "productDecisionCopy",
+        "components": [
+          "menuProduct-fruit-splash-title",
+          "menuProduct-fruit-splash-description",
+          "menuProduct-fruit-splash-ingredients"
+        ]
+      }
+    },
+    {
+      "id": "menuProduct-fruit-splash-title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Fruit Splash",
+        "classes": "compactTitle"
+      }
+    },
+    {
+      "id": "menuProduct-fruit-splash-description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Mango, fresa y espinaca en una mezcla frutal y colorida.",
+        "classes": "bodyCopy"
+      }
+    },
+    {
+      "id": "menuProduct-fruit-splash-ingredients",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes: mango, fresa, espinaca.",
+        "classes": "bodyCopy ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "menuGalleryInstruction",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "id": "menuGalleryInstruction",
+        "text": "Desliza horizontalmente o usa las teclas de flecha cuando la galería tenga el foco.",
+        "classes": "bodyCopy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "mayoreo",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "hero": {
+        "eyebrow": "Greenstock para negocios",
+        "title": "Una bebida lista para entrar a tu operación.",
+        "description": "Porciones individuales, congeladas y listas para licuar para gimnasios, cafeterías, clínicas, tiendas naturales y programas corporativos.",
+        "cta": "Solicita mayoreo"
+      },
+      "value": {
+        "eyebrow": "Menos preparación",
+        "title": "Porciones claras, mezclas consistentes y servicio más ágil.",
+        "description": "Cada empaque concentra los ingredientes de una bebida de 250 ml. Tu equipo abre, agrega líquido y licúa, sin medir cada fruta o verdura por separado."
+      },
+      "tiers": {
+        "title": "Precios por volumen",
+        "description": "Tarifas unitarias suministradas por Greenstock para conversación comercial; confirma mezcla, logística y condiciones al solicitar una propuesta.",
+        "fifty": {
+          "quantity": "Desde 50 piezas",
+          "price": "37 MXN por pieza"
+        },
+        "fiveHundred": {
+          "quantity": "Desde 500 piezas",
+          "price": "35 MXN por pieza"
+        },
+        "thousand": {
+          "quantity": "Desde 1,000 piezas",
+          "price": "30 MXN por pieza"
+        }
+      },
+      "media": {
+        "eyebrow": "Conoce el formato",
+        "title": "Un producto pensado para ocupar poco tiempo en barra.",
+        "description": "Recorre las fotografías del empaque y mira la presentación del producto antes de iniciar una conversación de volumen.",
+        "caption": "Descripción completa del video sin audio: recorrido vertical por recipientes con piña, pepino, hojas verdes y jengibre. No contiene narración ni información adicional."
+      },
+      "final": {
+        "title": "Cuéntanos qué tipo de operación tienes.",
+        "description": "Greenstock coordina conversaciones de mayoreo en Ciudad de México directamente por su Instagram autorizado.",
+        "cta": "Solicita mayoreo"
+      }
+    }
+  }
+}

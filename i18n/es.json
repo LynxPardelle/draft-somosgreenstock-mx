@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "allPages",
+  "lang": "es",
+  "dictionary": {
+    "ui": {
+      "logoAlt": "Greenstock",
+      "orderCta": "Pide ahora",
+      "instagramCta": "Escríbenos por Instagram",
+      "slogan": "Fast, Fresh & Flavfull",
+      "disclaimer": "La información nutricional y de bienestar presentada en este sitio es general y no sustituye la orientación médica o nutricional individual."
+    }
+  }
+}

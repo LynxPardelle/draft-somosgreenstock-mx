@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "impacto",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "hero": {
+        "eyebrow": "Propósito Greenstock",
+        "title": "Lo práctico también puede abrir oportunidades.",
+        "description": "Greenstock busca facilitar el consumo cotidiano de frutas y verduras mientras desarrolla una operación con empleo incluyente.",
+        "cta": "Conoce las mezclas"
+      },
+      "mission": {
+        "eyebrow": "Nuestra misión",
+        "title": "Una porción útil para las personas y para su comunidad.",
+        "description": "El proyecto combina ingredientes listos para licuar, una preparación que aprovecha la porción completa y una visión de trabajo accesible para personas con discapacidad.",
+        "note": "Las metas y afirmaciones de impacto aquí presentadas provienen de la información suministrada por Greenstock y deberán confirmarse antes de producción."
+      },
+      "mascots": {
+        "title": "Frescura, inclusión y curiosidad forman parte de la misma historia.",
+        "description": "Las ilustraciones de Greenstock acompañan los momentos donde explicamos el propósito de manera sencilla."
+      },
+      "process": {
+        "eyebrow": "Cómo se conecta",
+        "title": "Preparar mejor para aprovechar mejor.",
+        "description": "Porcionar, congelar y empacar al vacío permite entregar los ingredientes listos para licuar. El formato ayuda a organizar la rutina y a usar únicamente la porción elegida.",
+        "caption": "Video suministrado por Greenstock sobre su propósito y operación. Reprodúcelo con los controles cuando quieras."
+      },
+      "final": {
+        "title": "Cada alianza puede ampliar el impacto.",
+        "description": "Si quieres conocer el producto o conversar sobre una colaboración, escríbenos en el Instagram autorizado.",
+        "cta": "Escríbenos por Instagram"
+      }
+    }
+  }
+}

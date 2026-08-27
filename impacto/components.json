@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "domain": "somosgreenstock.mx",
+  "pageId": "impacto",
+  "components": [
+    {
+      "id": "impactMain",
+      "type": "container",
+      "config": {
+        "id": "main-content",
+        "tag": "main",
+        "classes": "pageMain",
+        "styles": {
+          "fontFamily": "Montserrat, Arial, sans-serif"
+        },
+        "components": [
+          "impactHero",
+          "impactMission",
+          "impactMascots",
+          "impactProcess",
+          "impactFinal"
+        ]
+      }
+    },
+    {
+      "id": "impactHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "impactHeroSplit"
+        ]
+      }
+    },
+    {
+      "id": "impactHeroSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "impactHeroCopy",
+          "impactHeroMascot"
+        ]
+      }
+    },
+    {
+      "id": "impactHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "impactBrandAccent",
+          "impactHeroEyebrow",
+          "impactHeroTitle",
+          "impactHeroDescription",
+          "impactHeroLink"
+        ]
+      }
+    },
+    {
+      "id": "impactHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Propósito Greenstock",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "impactHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "Lo práctico también puede abrir oportunidades.",
+        "classes": "displayTitle"
+      }
+    },
+    {
+      "id": "impactHeroDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.description",
+      "config": {
+        "tag": "p",
+        "text": "Greenstock desarrolla una operación con empleo incluyente.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "impactHeroLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.hero.cta",
+      "config": {
+        "href": "/menu",
+        "text": "Conoce las mezclas",
+        "classes": "secondaryCta ank-width-fitContent"
+      }
+    },
+    {
+      "id": "impactHeroMascot",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-impact-02.webp",
+        "alt": "Mascota Greenstock representando inclusión",
+        "width": 1000,
+        "height": 1000,
+        "loading": "eager",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-contain",
+        "fetchPriority": "high",
+        "sizes": "(min-width: 768px) 50vw, 100vw"
+      }
+    },
+    {
+      "id": "impactMission",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSection",
+        "components": [
+          "impactMissionSplit"
+        ]
+      }
+    },
+    {
+      "id": "impactMissionSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "impactMissionImage",
+          "impactMissionCopy"
+        ]
+      }
+    },
+    {
+      "id": "impactMissionImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-freezer-04.webp",
+        "alt": "Porciones Greenstock conservadas congeladas",
+        "width": 1200,
+        "height": 1000,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "galleryImage"
+      }
+    },
+    {
+      "id": "impactMissionCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "impactMissionEyebrow",
+          "impactMissionTitle",
+          "impactMissionDescription",
+          "impactMissionNote"
+        ]
+      }
+    },
+    {
+      "id": "impactMissionEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.mission.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Nuestra misión",
+        "classes": "eyebrow"
+      }
+    },
+    {
+      "id": "impactMissionTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.mission.title",
+      "config": {
+        "tag": "h2",
+        "text": "Una porción útil para las personas y para su comunidad.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "impactMissionDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.mission.description",
+      "config": {
+        "tag": "p",
+        "text": "Ingredientes listos para licuar y una visión de trabajo accesible.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "impactMissionNote",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.mission.note",
+      "config": {
+        "tag": "p",
+        "text": "Las metas y afirmaciones de impacto provienen de información suministrada por Greenstock.",
+        "classes": "bodyCopy ank-border-1px__solid__secondaryAccentColor ank-padding-16px ank-bg-secondaryBgColor ank-borderRadius-4px"
+      }
+    },
+    {
+      "id": "impactMascots",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionWarm",
+        "components": [
+          "impactMascotsContent"
+        ]
+      }
+    },
+    {
+      "id": "impactMascotsContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "impactMascotsTitle",
+          "impactMascotsDescription",
+          "impactMascotRail"
+        ]
+      }
+    },
+    {
+      "id": "impactMascotsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.mascots.title",
+      "config": {
+        "tag": "h2",
+        "text": "Frescura, inclusión y curiosidad forman parte de la misma historia.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "impactMascotsDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.mascots.description",
+      "config": {
+        "tag": "p",
+        "text": "Las ilustraciones explican el propósito de manera sencilla.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "impactMascotRail",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "assets.mascots",
+        "templateId": "impactMascotTemplate",
+        "idPrefix": "impactMascot",
+        "bindings": [
+          {
+            "to": "config.src",
+            "sources": [
+              "url"
+            ]
+          },
+          {
+            "to": "config.alt",
+            "sources": [
+              "alt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "ariaLabel": "Ilustraciones de la misión Greenstock",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COM1frED ank-gap-24px",
+        "components": []
+      }
+    },
+    {
+      "id": "impactMascotTemplate",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "width": 900,
+        "height": 900,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-contain ank-transformHover-translateYMIN3px"
+      }
+    },
+    {
+      "id": "impactProcess",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionDark",
+        "components": [
+          "impactProcessSplit"
+        ]
+      }
+    },
+    {
+      "id": "impactProcessSplit",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketSplit",
+        "components": [
+          "impactProcessCopy",
+          "impactProcessFigure"
+        ]
+      }
+    },
+    {
+      "id": "impactProcessCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "impactProcessEyebrow",
+          "impactProcessTitle",
+          "impactProcessDescription"
+        ]
+      }
+    },
+    {
+      "id": "impactProcessEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "Cómo se conecta",
+        "classes": "ank-m-0 ank-color-secondaryAccentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "impactProcessTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.title",
+      "config": {
+        "tag": "h2",
+        "text": "Preparar mejor para aprovechar mejor.",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2rem ank-fontSize-md-3_2rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "impactProcessDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.process.description",
+      "config": {
+        "tag": "p",
+        "text": "Porcionar, congelar y empacar al vacío organiza la rutina.",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_08rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "impactProcessFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "ank-m-0 ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "impactPendingImage",
+          "impactPendingCopy"
+        ]
+      },
+      "assetRef": "greenstock-impact-04",
+      "assetStatus": "pending-source-materialization"
+    },
+    {
+      "id": "impactFinal",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "marketSectionBright",
+        "components": [
+          "impactFinalContent"
+        ]
+      }
+    },
+    {
+      "id": "impactFinalContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "marketContent",
+        "components": [
+          "impactFinalTitle",
+          "impactFinalDescription",
+          "impactFinalCta"
+        ]
+      }
+    },
+    {
+      "id": "impactFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.final.title",
+      "config": {
+        "tag": "h2",
+        "text": "Cada alianza puede ampliar el impacto.",
+        "classes": "sectionTitle"
+      }
+    },
+    {
+      "id": "impactFinalDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.final.description",
+      "config": {
+        "tag": "p",
+        "text": "Conoce el producto o conversa sobre una colaboración.",
+        "classes": "bodyLead"
+      }
+    },
+    {
+      "id": "impactFinalCta",
+      "type": "link",
+      "valueInstructions": "set:config.href,var,ctaTargets.contactUrl;set:config.text,i18n,page.final.cta",
+      "config": {
+        "href": "https://www.instagram.com/greens.tock/",
+        "text": "Escríbenos por Instagram",
+        "ariaLabel": "Contactar a Greenstock por Instagram",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "primaryCta ank-width-fitContent"
+      }
+    },
+    {
+      "id": "impactBrandAccent",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/logos/greenstock-mark-primary.png",
+        "alt": "",
+        "width": 160,
+        "height": 160,
+        "loading": "lazy",
+        "decoding": "async",
+        "fetchPriority": "low",
+        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain"
+      }
+    },
+    {
+      "id": "impactPendingImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/mascots/mascot-impact-02.webp",
+        "alt": "Ilustración Greenstock usada como alternativa estática mientras el video de impacto está pendiente",
+        "width": 1024,
+        "height": 1536,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-contain"
+      }
+    },
+    {
+      "id": "impactPendingCopy",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Material audiovisual pendiente: el video de impacto se activará solo después de materializar, inspeccionar, optimizar y aprobar el archivo.",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-0_88rem ank-lineHeight-1_55"
+      }
+    }
+  ]
+}
