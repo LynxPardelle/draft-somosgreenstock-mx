@@ -965,3 +965,12 @@ contractTest('CONTRACT-025 fits all five primary labels within the measured 375p
   assert.equal(nav.config.styles.overflowX, 'visible', 'keyboard users must not depend on an undiscoverable horizontal scroller');
   for (const link of links) assert.ok(parseFloat(link.config.styles.minWidth) >= 44, `${link.id} usable target width`);
 });
+
+contractTest('CONTRACT-026 keeps section titles tablet-safe before the desktop breakpoint', () => {
+  const tokens = readJson('angora-combos.json').combos.sectionTitle.join(' ').split(/\s+/);
+  const fontSizes = tokens.filter((token) => token.startsWith('ank-fontSize-'));
+  assert.deepEqual(fontSizes, [
+    'ank-fontSize-2rem',
+    'ank-fontSize-lg-3_2rem',
+  ], 'retain 2rem through md; apply the unchanged 3.2rem increment only at lg');
+});

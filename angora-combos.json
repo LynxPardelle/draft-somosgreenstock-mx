@@ -82,7 +82,7 @@
       "ank-m-0 ank-maxWidth-20ch ank-color-titleColor ank-fontWeight-900 ank-lineHeight-1_02 ank-letterSpacing-MIN0_04em"
     ],
     "sectionTitle": [
-      "ank-m-0 ank-maxWidth-18ch ank-color-titleColor ank-fontSize-2rem ank-fontSize-md-3_2rem ank-fontWeight-900 ank-lineHeight-1_02 ank-letterSpacing-MIN0_03em"
+      "ank-m-0 ank-maxWidth-18ch ank-color-titleColor ank-fontSize-2rem ank-fontSize-lg-3_2rem ank-fontWeight-900 ank-lineHeight-1_02 ank-letterSpacing-MIN0_03em"
     ],
     "bodyLead": [
       "ank-m-0 ank-maxWidth-64ch ank-color-secondaryTitleColor ank-fontSize-1_05rem ank-fontSize-md-1_22rem ank-lineHeight-1_65"
