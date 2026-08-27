@@ -975,6 +975,20 @@ contractTest('CONTRACT-026 keeps section titles tablet-safe before the desktop b
   ], 'retain 2rem through md; apply the unchanged 3.2rem increment only at lg');
 });
 
+contractTest('CONTRACT-028 keeps the resolved home impact title variant tablet-safe', () => {
+  const title = mergedComponents('default').get('homeImpactTitle');
+  assert.equal(title.config.tag, 'h2');
+  const tokens = expandedClasses(title, comboMapForPage('default')).split(/\s+/);
+  assert.deepEqual(tokens.filter((token) => token.startsWith('ank-fontSize-')), [
+    'ank-fontSize-2rem',
+    'ank-fontSize-md-2rem',
+    'ank-fontSize-lg-3_2rem',
+  ], 'md needs an explicit 2rem override of the inherited heading size before the desktop increment');
+  assert.equal(title.config.styles?.fontSize, undefined, 'inline styles must not override the responsive variant');
+  assert.ok(tokens.includes('ank-color-bgColor'), 'preserve the inverse foreground');
+  assert.ok(tokens.includes('ank-lineHeight-1'), 'preserve the existing heading rhythm');
+});
+
 contractTest('CONTRACT-027 keeps pending-media descriptions source-backed without claiming unseen playback', () => {
   const variables = sharedVariables();
   for (const id of ['greenstock-blend-02', 'greenstock-impact-04']) {

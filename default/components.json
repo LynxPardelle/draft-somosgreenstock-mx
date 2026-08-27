@@ -766,7 +766,7 @@
       "config": {
         "tag": "h2",
         "text": "Una operación que busca abrir oportunidades.",
-        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2rem ank-fontSize-md-3_2rem ank-fontWeight-900 ank-lineHeight-1"
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2rem ank-fontSize-md-2rem ank-fontSize-lg-3_2rem ank-fontWeight-900 ank-lineHeight-1"
       }
     },
     {
