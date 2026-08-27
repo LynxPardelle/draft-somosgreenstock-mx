@@ -11,7 +11,8 @@
         "tag": "main",
         "classes": "pageMain",
         "styles": {
-          "fontFamily": "Montserrat, Arial, sans-serif"
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "scrollMarginTop": "128px"
         },
         "components": [
           "wholesaleHero",
@@ -19,7 +20,8 @@
           "wholesaleTiers",
           "wholesaleMedia",
           "wholesaleFinal"
-        ]
+        ],
+        "tabindex": -1
       }
     },
     {
@@ -77,7 +79,12 @@
       "config": {
         "tag": "h1",
         "text": "Una bebida lista para entrar a tu operación.",
-        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2_5rem ank-fontSize-md-4_5rem ank-fontWeight-900 ank-lineHeight-0_98"
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2_5rem ank-fontSize-md-4_5rem ank-fontWeight-900 ank-lineHeight-0_98",
+        "styles": {
+          "fontSize": "clamp(2.2rem, 3.4vw, 4.25rem)",
+          "maxWidth": "20ch",
+          "lineHeight": "1.02"
+        }
       }
     },
     {
@@ -100,7 +107,20 @@
         "ariaLabel": "Solicitar mayoreo Greenstock por Instagram",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "primaryCta ank-width-fitContent"
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -482,7 +502,16 @@
           "wholesaleVideoLoadLabel",
           "wholesaleVideo",
           "wholesaleVideoCaption"
-        ]
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "96px minmax(0, 1fr)",
+          "gap": "16px",
+          "alignItems": "center",
+          "margin": "0",
+          "width": "100%",
+          "minWidth": "0"
+        }
       }
     },
     {
@@ -494,7 +523,14 @@
         "alt": "",
         "classes": "videoMedia",
         "styles": {
-          "width": "100%"
+          "width": "100%",
+          "display": "block",
+          "maxWidth": "960px",
+          "height": "clamp(320px, 40vw, 480px)",
+          "maxHeight": "480px",
+          "objectFit": "contain",
+          "gridColumn": "1 / -1",
+          "justifySelf": "start"
         },
         "controls": true,
         "preload": "none",
@@ -509,7 +545,12 @@
       "config": {
         "tag": "figcaption",
         "text": "Descripción completa del video sin audio: recorrido vertical por recipientes con piña, pepino, hojas verdes y jengibre. No contiene narración ni información adicional.",
-        "classes": "figureCaption"
+        "classes": "figureCaption",
+        "styles": {
+          "gridColumn": "1 / -1",
+          "margin": "0",
+          "maxWidth": "72ch"
+        }
       }
     },
     {
@@ -566,7 +607,20 @@
         "ariaLabel": "Solicitar mayoreo Greenstock por Instagram",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "primaryCta ank-width-fitContent"
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -581,7 +635,14 @@
         "loading": "lazy",
         "decoding": "async",
         "fetchPriority": "low",
-        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain"
+        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "112px",
+          "height": "112px"
+        }
       }
     },
     {
@@ -605,7 +666,16 @@
         "height": 1280,
         "loading": "lazy",
         "decoding": "async",
-        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px"
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px",
+        "styles": {
+          "display": "block",
+          "width": "96px",
+          "height": "128px",
+          "maxWidth": "100%",
+          "objectFit": "contain",
+          "gridColumn": "1",
+          "gridRow": "1"
+        }
       }
     },
     {
@@ -614,7 +684,13 @@
       "config": {
         "tag": "p",
         "text": "Reproducción opcional: usa el control Reproducir para cargar el video.",
-        "classes": "bodyCopy"
+        "classes": "bodyCopy",
+        "styles": {
+          "gridColumn": "2",
+          "gridRow": "1",
+          "margin": "0",
+          "maxWidth": "48ch"
+        }
       }
     }
   ]

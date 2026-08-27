@@ -11,7 +11,8 @@
         "tag": "main",
         "classes": "pageMain",
         "styles": {
-          "fontFamily": "Montserrat, Arial, sans-serif"
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "scrollMarginTop": "128px"
         },
         "components": [
           "homeHero",
@@ -22,7 +23,8 @@
           "homeWholesale",
           "homeQuestions",
           "homeFinal"
-        ]
+        ],
+        "tabindex": -1
       }
     },
     {
@@ -31,11 +33,18 @@
       "config": {
         "tag": "section",
         "ariaLabelledby": "homeHeroTitle",
-        "classes": "ank-width-100per ank-minHeight-78vh ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-0_9fr__1_1fr ank-bg-titleColor",
+        "classes": "ank-width-100per ank-bg-bgColor",
         "components": [
           "homeHeroCopy",
           "homeHeroMediaFrame"
-        ]
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 420px), 1fr))",
+          "alignItems": "stretch",
+          "width": "100%",
+          "minHeight": "0"
+        }
       }
     },
     {
@@ -43,14 +52,25 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-justifyContent-center ank-alignItems-start ank-gap-20px ank-paddingInline-22px ank-paddingInline-md-7vw ank-paddingBlock-64px",
+        "classes": "ank-color-titleColor",
         "components": [
           "homeBrandAccent",
           "homeHeroEyebrow",
           "homeHeroTitle",
           "homeHeroDescription",
           "homeHeroActions"
-        ]
+        ],
+        "styles": {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "alignItems": "flex-start",
+          "gap": "12px",
+          "padding": "clamp(24px, 4vw, 64px)",
+          "boxSizing": "border-box",
+          "minWidth": "0",
+          "backgroundColor": "var(--ank-bgColor)"
+        }
       }
     },
     {
@@ -60,7 +80,12 @@
       "config": {
         "tag": "p",
         "text": "Frutas y verduras listas para licuar",
-        "classes": "ank-m-0 ank-color-secondaryAccentColor ank-fontSize-0_78rem ank-fontWeight-900 ank-letterSpacing-0_12em ank-textTransform-uppercase"
+        "classes": "ank-m-0 ank-color-linkColor ank-fontWeight-900 ank-letterSpacing-0_08em ank-textTransform-uppercase",
+        "styles": {
+          "margin": "0",
+          "fontSize": "14px",
+          "lineHeight": "1.35"
+        }
       }
     },
     {
@@ -71,7 +96,13 @@
         "id": "homeHeroTitle",
         "tag": "h1",
         "text": "Tu mezcla diaria ya está lista.",
-        "classes": "ank-m-0 ank-maxWidth-12ch ank-color-bgColor ank-fontSize-2_7rem ank-fontSize-md-5_4rem ank-fontWeight-900 ank-lineHeight-0_92 ank-letterSpacing-MIN0_05em"
+        "classes": "ank-m-0 ank-color-titleColor ank-fontWeight-900 ank-letterSpacing-MIN0_04em",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "20ch",
+          "fontSize": "clamp(2.2rem, 3.4vw, 4.25rem)",
+          "lineHeight": "1.02"
+        }
       }
     },
     {
@@ -80,8 +111,14 @@
       "valueInstructions": "set:config.text,i18n,page.hero.description",
       "config": {
         "tag": "p",
-        "text": "Porciones congeladas y empacadas al vacío con ingredientes listos para preparar una bebida de 250 ml.",
-        "classes": "ank-m-0 ank-maxWidth-54ch ank-color-secondaryBgColor ank-fontSize-1_08rem ank-fontSize-md-1_25rem ank-lineHeight-1_62"
+        "text": "Porciones congeladas y al vacío. Abre, agrega líquido y licúa una bebida de 250 ml.",
+        "classes": "ank-m-0 ank-color-textColor",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "48ch",
+          "fontSize": "clamp(1rem, 1.2vw, 1.125rem)",
+          "lineHeight": "1.5"
+        }
       }
     },
     {
@@ -93,7 +130,13 @@
         "components": [
           "homeHeroOrder",
           "homeHeroMenu"
-        ]
+        ],
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexWrap": "wrap",
+          "gap": "12px"
+        }
       }
     },
     {
@@ -106,7 +149,20 @@
         "ariaLabel": "Pedir Greenstock por Instagram",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "primaryCta"
+        "classes": "primaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -116,7 +172,18 @@
       "config": {
         "href": "/menu",
         "text": "Ver menú",
-        "classes": "secondaryCta ank-borderColor-secondaryAccentColor ank-color-bgColor"
+        "classes": "secondaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
       }
     },
     {
@@ -124,10 +191,18 @@
       "type": "container",
       "config": {
         "tag": "figure",
-        "classes": "ank-m-0 ank-minHeight-420px ank-overflow-hidden ank-bg-secondaryBgColor",
+        "classes": "ank-bg-secondaryBgColor",
         "components": [
           "homeHeroImage"
-        ]
+        ],
+        "styles": {
+          "margin": "0",
+          "width": "100%",
+          "height": "clamp(240px, 46vw, 640px)",
+          "minHeight": "0",
+          "minWidth": "0",
+          "overflow": "hidden"
+        }
       }
     },
     {
@@ -138,20 +213,21 @@
         "tag": "image",
         "src": "https://assets.zoolandingpage.com.mx/somosgreenstock.mx/shared/package-photos/package-front-01.webp",
         "alt": "Porción Greenstock congelada y empacada al vacío, lista para licuar",
-        "width": 1440,
-        "height": 1200,
+        "width": 1200,
+        "height": 1600,
         "loading": "eager",
         "fetchPriority": "high",
         "decoding": "async",
-        "sizes": "(min-width: 768px) 55vw, 100vw",
+        "sizes": "(min-width: 840px) 50vw, 100vw",
         "styles": {
           "display": "block",
           "width": "100%",
           "height": "100%",
-          "minHeight": "420px",
-          "objectFit": "cover"
+          "minHeight": "0",
+          "objectFit": "cover",
+          "objectPosition": "center 58%"
         },
-        "classes": "imageCover"
+        "classes": "ank-display-block ank-objectFit-cover"
       }
     },
     {
@@ -483,7 +559,18 @@
       "config": {
         "href": "/menu",
         "text": "Explorar el menú completo",
-        "classes": "secondaryCta ank-width-fitContent"
+        "classes": "secondaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
       }
     },
     {
@@ -563,7 +650,16 @@
           "homeProcessLoadLabel",
           "homeProcessVideo",
           "homeProcessCaption"
-        ]
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "96px minmax(0, 1fr)",
+          "gap": "16px",
+          "alignItems": "center",
+          "margin": "0",
+          "width": "100%",
+          "minWidth": "0"
+        }
       }
     },
     {
@@ -575,7 +671,14 @@
         "alt": "",
         "classes": "videoMedia",
         "styles": {
-          "width": "100%"
+          "width": "100%",
+          "display": "block",
+          "maxWidth": "960px",
+          "height": "clamp(320px, 40vw, 480px)",
+          "maxHeight": "480px",
+          "objectFit": "contain",
+          "gridColumn": "1 / -1",
+          "justifySelf": "start"
         },
         "controls": true,
         "preload": "none",
@@ -590,7 +693,12 @@
       "config": {
         "tag": "figcaption",
         "text": "Descripción completa del video sin audio: recorrido horizontal por recipientes con piña, hierbas y otros ingredientes preparados. No contiene narración ni información adicional.",
-        "classes": "figureCaption"
+        "classes": "figureCaption",
+        "styles": {
+          "gridColumn": "1 / -1",
+          "margin": "0",
+          "maxWidth": "72ch"
+        }
       }
     },
     {
@@ -681,7 +789,20 @@
       "config": {
         "href": "/impacto",
         "text": "Conocer nuestro impacto",
-        "classes": "primaryCta ank-width-fitContent"
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -758,7 +879,18 @@
       "config": {
         "href": "/mayoreo",
         "text": "Ver mayoreo",
-        "classes": "secondaryCta ank-width-fitContent"
+        "classes": "secondaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
       }
     },
     {
@@ -837,7 +969,18 @@
       "config": {
         "href": "/preguntas",
         "text": "Resolver preguntas",
-        "classes": "secondaryCta ank-width-fitContent"
+        "classes": "secondaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start"
+        }
       }
     },
     {
@@ -894,7 +1037,20 @@
         "ariaLabel": "Pedir Greenstock por Instagram",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "primaryCta"
+        "classes": "primaryCta",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -909,7 +1065,14 @@
         "loading": "lazy",
         "decoding": "async",
         "fetchPriority": "low",
-        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain"
+        "classes": "ank-display-block ank-objectFit-contain",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "80px",
+          "height": "80px"
+        }
       }
     },
     {
@@ -923,7 +1086,16 @@
         "height": 720,
         "loading": "lazy",
         "decoding": "async",
-        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px"
+        "classes": "ank-display-block ank-width-100per ank-height-auto ank-objectFit-cover ank-borderRadius-4px",
+        "styles": {
+          "display": "block",
+          "width": "96px",
+          "height": "128px",
+          "maxWidth": "100%",
+          "objectFit": "contain",
+          "gridColumn": "1",
+          "gridRow": "1"
+        }
       }
     },
     {
@@ -932,7 +1104,13 @@
       "config": {
         "tag": "p",
         "text": "Reproducción opcional: usa el control Reproducir para cargar el video.",
-        "classes": "bodyCopy"
+        "classes": "bodyCopy",
+        "styles": {
+          "gridColumn": "2",
+          "gridRow": "1",
+          "margin": "0",
+          "maxWidth": "48ch"
+        }
       }
     }
   ]
