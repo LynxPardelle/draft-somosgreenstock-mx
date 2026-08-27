@@ -974,3 +974,37 @@ contractTest('CONTRACT-026 keeps section titles tablet-safe before the desktop b
     'ank-fontSize-lg-3_2rem',
   ], 'retain 2rem through md; apply the unchanged 3.2rem increment only at lg');
 });
+
+contractTest('CONTRACT-027 keeps pending-media descriptions source-backed without claiming unseen playback', () => {
+  const variables = sharedVariables();
+  for (const id of ['greenstock-blend-02', 'greenstock-impact-04']) {
+    const video = variables.assets.videos.find((asset) => asset.id === id);
+    assert.equal(video.status, 'pending-source-materialization', `${id} has not been inspected`);
+  }
+  const questions = readJson('preguntas/i18n/es.json').dictionary.page.video;
+  const impact = readJson('impacto/i18n/es.json').dictionary.page.process;
+  const fallback = pageComponents('preguntas').find((component) => component.id === 'questionsVideoDescription').config.text;
+  const staticCopies = {
+    questionsDescription: questions.description,
+    questionsFallback: fallback,
+    questionsCaption: questions.caption,
+    impactCaption: impact.caption,
+  };
+  const playbackClaims = Object.entries(staticCopies)
+    .filter(([, copy]) => /\bvideo\b|\breproduc\w*\b|\bcontroles\b/.test(normalizeText(copy)))
+    .map(([name]) => name);
+  assert.deepEqual(playbackClaims, [], 'pending-media prose describes recorded steps or process, not unseen footage');
+  assert.equal(fallback, questions.description, 'fallback and translated preparation instructions agree');
+  for (const copy of [questions.description, questions.caption, fallback]) {
+    let previousStep = -1;
+    for (const step of variables.preparationSteps) {
+      const position = normalizeText(copy).indexOf(normalizeText(step.title));
+      assert.ok(position > previousStep, `static preparation copy preserves the recorded ${step.title} step in order`);
+      previousStep = position;
+    }
+  }
+  for (const step of ['porcionar', 'congelar', 'empacar al vacio']) {
+    assert.ok(normalizeText(impact.description).includes(step), `${step} is part of the recorded process`);
+    assert.ok(normalizeText(impact.caption).includes(step), `static impact caption preserves ${step}`);
+  }
+});
