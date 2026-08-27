@@ -15,6 +15,9 @@
     "description": {
       "es": "Consulta precios de mayoreo Greenstock para gimnasios, cafeterías, clínicas, tiendas naturales y programas corporativos en Ciudad de México."
     },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/mayoreo?draftDomain=somosgreenstock.mx"
+    },
     "robots": {
       "es": "noindex,nofollow"
     },

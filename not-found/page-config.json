@@ -15,6 +15,9 @@
     "description": {
       "es": "La página que buscas no está disponible. Regresa al inicio de Greenstock o explora el menú de seis mezclas listas para licuar."
     },
+    "canonical": {
+      "es": "https://test.zoolandingpage.com.mx/404?draftDomain=somosgreenstock.mx"
+    },
     "robots": {
       "es": "noindex,nofollow"
     },
