@@ -265,7 +265,7 @@
       "valueInstructions": "set:config.text,i18n,page.video.description",
       "config": {
         "tag": "p",
-        "text": "El video complementa las instrucciones escritas.",
+        "text": "Abre la porción, agrega líquido y licúa. Así de simple.",
         "classes": "bodyLead"
       }
     },
