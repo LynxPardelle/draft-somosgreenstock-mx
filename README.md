@@ -1,5 +1,22 @@
 # Greenstock draft
 
+<!-- zoolanding-hub-routing:start -->
+## Zoolanding Knowledge Router
+
+Shared procedures are routed through the Zoolandingpage hub. Start with [AGENTS.md](AGENTS.md) and open only the document needed for the current task.
+
+| Task | Read |
+| --- | --- |
+| Edit draft content or routes | Local `site-config.json`, page JSON, and task-specific local docs |
+| Create or bootstrap a draft | [ai-notes/how-to/create-secure-draft-repo.md](https://github.com/LynxPardelle/zoolandingpage/blob/main/ai-notes/how-to/create-secure-draft-repo.md) |
+| Promote, deploy, or configure branches | [Hub lifecycle guide and local `.github/workflows/`](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) |
+| Upload public assets | [docs/12-public-assets-and-file-uploads.md](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/12-public-assets-and-file-uploads.md) |
+| Configure domains or aliases | [docs/13-managed-alias-front-door.md](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/13-managed-alias-front-door.md) |
+| Work across repositories | [docs/repository-map.md](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/repository-map.md) |
+
+Critical repository-specific safety, deployment, and rollback rules remain local.
+<!-- zoolanding-hub-routing:end -->
+
 Spanish-language catalogue for frozen, vacuum-packed fruit and vegetable portions ready to blend, with consumer ordering information and a B2B offering for businesses in Mexico City. This repository contains the sanitized declarative site package, not the client's original documents or source-media archive.
 
 ## Project boundaries
@@ -34,9 +51,9 @@ The client supplied the product information and media and requested their use. T
 
 The published public-asset set contains 28 source-image derivatives, two video posters and two available MP4 videos. Two larger client videos remain pending retrieval, with static fallback content and no playable URL. Asset availability is recorded in `variables.json`; preserve that distinction when updating the catalogue.
 
-Montserrat is the preferred font family, with Arial and sans-serif fallbacks; declaring it does not establish that a font file was delivered. The current generic video renderer exposes controls but has no declarative native poster or caption-track binding, so this draft supplies separate static images and text descriptions. Home/wholesale figures now use a single full-width grid track, and mobile navigation uses smaller padding, minimum 44px targets and wrapping. Section titles retain 2rem through the tablet breakpoint and increase to 3.2rem only at the desktop breakpoint. These configuration fixes still require independent final visual QA before client-ready approval.
+Montserrat is the preferred font family, with Arial and sans-serif fallbacks; declaring it does not establish that a font file was delivered. The current generic video renderer exposes controls but has no declarative native poster or caption-track binding, so this draft supplies separate static images and text descriptions. Home/wholesale figures now use a single full-width grid track, and mobile navigation uses smaller padding, minimum 44px targets and wrapping. The Home impact heading uses explicit responsive overrides to avoid within-word fractures; actual heading sizes depend on the runtime cascade and must be verified in-browser. Rendered changes require independent desktop/mobile QA on every affected route, with dated verification in the hub draft changelog.
 
-Separate shared-runtime preview defects remain open: on an unknown route, the generic SSR 404 link “Ir al inicio” points to `/` and drops `draftDomain` and `debugWorkspace`, leading to an empty default app instead of Greenstock; its CTA also measured only 2.23:1 contrast. These are distinct from the intentional hidden client subtree in the SSR 404 document and are not repaired by the draft layout changes.
+The companion shared-runtime 404 recovery/contrast repair has local regression coverage; normal hub integration and testing promotion remain separate pending steps. The branded `/404` page is distinct from the generic unknown-route shell and its intentionally hidden client subtree, which is not duplicate accessible content.
 
 ## Local preview and QA
 
@@ -58,4 +75,4 @@ node tools/draft-smoke-check.mjs --local-base-url=http://127.0.0.1:4200 --domain
 node tools/draft-public-safety-audit.mjs --repo=drafts/somosgreenstock.mx --history=true --summary=true
 ```
 
-The current configuration fixes passed 29 contract tests, validation of 35 payload JSON files and readiness with zero blockers/warnings. The preceding local smoke checkpoint passed 12/12 views: all six routes at 1440×900 and 390×844. Live comparisons were skipped; neither that earlier smoke result nor the current config tests certify testing deployment or final visual QA of these fixes. Dated results and subsequent sign-off belong in the [hub draft changelog](https://github.com/LynxPardelle/zoolandingpage/tree/main/changelog/drafts), not in duplicated release instructions here.
+The current package passes 29 contract tests, validation of 35 payload JSON files and readiness with zero blockers/warnings. The local smoke checkpoint passed 12/12 views: all six routes at 1440×900 and 390×844. Live comparisons were skipped; configuration checks and smoke do not independently certify testing deployment or final visual QA. Dated results and subsequent sign-off belong in the [hub draft changelog](https://github.com/LynxPardelle/zoolandingpage/tree/main/changelog/drafts), not in duplicated release instructions here.
