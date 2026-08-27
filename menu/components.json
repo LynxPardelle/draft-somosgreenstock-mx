@@ -11,14 +11,16 @@
         "tag": "main",
         "classes": "pageMain",
         "styles": {
-          "fontFamily": "Montserrat, Arial, sans-serif"
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "scrollMarginTop": "128px"
         },
         "components": [
           "menuHero",
           "menuCatalog",
           "menuGallery",
           "menuPrice"
-        ]
+        ],
+        "tabindex": -1
       }
     },
     {
@@ -76,7 +78,12 @@
       "config": {
         "tag": "h1",
         "text": "Seis mezclas. Una forma muy simple de prepararlas.",
-        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2_5rem ank-fontSize-md-4_5rem ank-fontWeight-900 ank-lineHeight-0_98"
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-2_5rem ank-fontSize-md-4_5rem ank-fontWeight-900 ank-lineHeight-0_98",
+        "styles": {
+          "fontSize": "clamp(2.2rem, 3.4vw, 4.25rem)",
+          "maxWidth": "20ch",
+          "lineHeight": "1.02"
+        }
       }
     },
     {
@@ -99,7 +106,20 @@
         "ariaLabel": "Pedir Greenstock por Instagram",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "primaryCta ank-width-fitContent"
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -369,7 +389,20 @@
         "ariaLabel": "Pedir Greenstock por Instagram",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "primaryCta ank-width-fitContent"
+        "classes": "primaryCta ank-width-fitContent",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "boxSizing": "border-box",
+          "minHeight": "48px",
+          "width": "fit-content",
+          "maxWidth": "100%",
+          "alignSelf": "start",
+          "justifySelf": "start",
+          "color": "var(--ank-titleColor)",
+          "backgroundColor": "var(--ank-accentColor)"
+        }
       }
     },
     {
@@ -384,7 +417,14 @@
         "loading": "lazy",
         "decoding": "async",
         "fetchPriority": "low",
-        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain"
+        "classes": "ank-display-block ank-width-120px ank-height-auto ank-objectFit-contain",
+        "styles": {
+          "display": "block",
+          "backgroundColor": "var(--ank-bgColor)",
+          "objectFit": "contain",
+          "width": "112px",
+          "height": "112px"
+        }
       }
     },
     {

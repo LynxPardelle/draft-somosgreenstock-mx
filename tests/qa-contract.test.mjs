@@ -596,7 +596,9 @@ contractTest('CONTRACT-011 makes the not-found experience useful and recoverable
 
 contractTest('CONTRACT-012 provides semantic landmarks, headings, alt text and accessible FAQ/media fallbacks', () => {
   const shared = sharedComponents();
-  const skipLink = shared.find((component) => component.type === 'link' && component.config?.href === '#main-content');
+  const skipLink = shared.find((component) =>
+    component.config?.href === '#main-content'
+    || component.eventInstructions === 'skipToMain:main-content');
   const header = shared.find((component) => component.type === 'container' && component.config?.tag === 'header');
   const footer = shared.find((component) => component.type === 'container' && component.config?.tag === 'footer');
   const nav = shared.find((component) => component.type === 'container' && component.config?.tag === 'nav');
@@ -775,5 +777,127 @@ contractTest('CONTRACT-014 rejects unsupported global keyframe classes and unfin
   assert.doesNotMatch(corpus, /borderLeft-(?:[2-9]|\d{2,})px__solid__accentColor/i, 'thick accent stripe is not part of the design system');
   for (const component of payloads.flatMap((payload) => payload.components ?? [])) {
     if (component.type === 'link') assert.notEqual(component.config?.href, '#', `${component.id} placeholder link`);
+  }
+});
+
+contractTest('CONTRACT-016 gives links real target boxes and orange CTAs an explicit AA foreground', () => {
+  const links = [sharedComponents(), ...PAGE_IDS.map(pageComponents)].flat()
+    .filter((component) => component.type === 'link');
+  for (const link of links) {
+    const styles = link.config?.styles ?? {};
+    assert.ok(['inline-flex', 'flex', 'block'].includes(styles.display), `${link.id} needs a real block/flex target, not inline min-height`);
+    assert.ok(parseFloat(styles.minHeight) >= 44, `${link.id} minimum clickable height`);
+    assert.equal(styles.boxSizing, 'border-box', `${link.id} stable target sizing`);
+    if (String(link.config.classes).split(/\s+/).includes('primaryCta')) {
+      assert.equal(styles.color, 'var(--ank-titleColor)', `${link.id} must not inherit cream on orange`);
+      assert.equal(styles.backgroundColor, 'var(--ank-accentColor)', `${link.id} explicit orange surface`);
+    }
+  }
+});
+
+contractTest('CONTRACT-017 keeps the shared header compact without hiding any navigation choice', () => {
+  const shared = sharedComponents();
+  const byId = new Map(shared.map((component) => [component.id, component]));
+  const header = shared.find((component) => component.config?.tag === 'header');
+  const shell = byId.get(header.config.components[0]);
+  assert.ok(parseFloat(shell.config?.styles?.minHeight) >= 80 && parseFloat(shell.config.styles.minHeight) <= 96, 'desktop header content budget');
+  assert.ok(parseFloat(shell.config.styles.paddingBlock) <= 4, 'two compact mobile rows must fit about 120px');
+  const headerIds = reachableComponentIds(header.id, byId);
+  const logo = shared.find((component) => headerIds.has(component.id) && component.config?.tag === 'image');
+  assert.ok(parseFloat(logo.config?.styles?.width) >= 56 && parseFloat(logo.config.styles.width) <= 72, 'header logo width');
+  assert.ok(parseFloat(logo.config?.styles?.height) <= 64, 'square artwork must not grow the header');
+  const nav = shared.find((component) => headerIds.has(component.id) && component.config?.tag === 'nav');
+  const navLinks = nav.config.components.map((id) => byId.get(id));
+  assert.deepEqual(new Set(navLinks.map((link) => link.config.href)), new Set(ROUTES.filter(({ pageId }) => pageId !== 'not-found').map(({ path }) => path)));
+  for (const link of navLinks) {
+    assert.ok(parseFloat(link.config?.styles?.fontSize) >= 14, `${link.id} mobile-readable label`);
+    assert.ok(parseFloat(link.config.styles.paddingInline) <= 6, `${link.id} room for all five labels at 375px`);
+    assert.equal(link.config.styles.whiteSpace, 'nowrap');
+  }
+});
+
+contractTest('CONTRACT-018 bounds the home hero independently of portrait image intrinsic height', () => {
+  const components = mergedComponents('default');
+  const main = [...components.values()].find((component) => component.config?.tag === 'main');
+  const hero = components.get(main.config.components[0]);
+  assert.equal(hero.config?.styles?.display, 'grid');
+  assert.match(hero.config.styles.gridTemplateColumns, /repeat\(auto-fit, minmax\(min\(100%, 420px\), 1fr\)\)/, 'hero must stack without a narrow fixed text column');
+  assert.equal(hero.config.styles.minHeight, '0');
+  const heroIds = reachableComponentIds(hero.id, components);
+  const heading = [...components.values()].find((component) => heroIds.has(component.id) && component.config?.tag === 'h1');
+  assert.ok(parseFloat(heading.config?.styles?.maxWidth) >= 18 && parseFloat(heading.config.styles.maxWidth) <= 24, 'readable hero title measure');
+  assert.equal(heading.config.styles.fontSize, 'clamp(2.2rem, 3.4vw, 4.25rem)', 'bounded heading scale');
+  const image = [...components.values()].find((component) => heroIds.has(component.id) && component.config?.fetchPriority === 'high');
+  const frame = [...components.values()].find((component) => component.config?.components?.includes(image.id));
+  assert.equal(frame.config?.styles?.height, 'clamp(240px, 46vw, 640px)', 'bounded portrait frame at mobile and desktop');
+  assert.equal(frame.config.styles.overflow, 'hidden');
+  assert.equal(image.config.styles.height, '100%');
+  assert.equal(image.config.styles.minHeight, '0');
+  assert.equal(image.config.styles.objectFit, 'cover');
+  assert.equal(image.config.width, 1200);
+  assert.equal(image.config.height, 1600);
+  const copy = components.get(hero.config.components[0]);
+  assert.equal(copy.config?.styles?.backgroundColor, 'var(--ank-bgColor)', 'supplied black artwork needs a coherent cream text plane');
+  assert.ok(parseFloat(copy.config.styles.gap) <= 16, 'compact mobile copy rhythm');
+});
+
+contractTest('CONTRACT-019 skips directly to a focusable main without hash navigation resetting the page', () => {
+  const skip = sharedComponents().find((component) =>
+    /saltar al contenido principal/.test(normalizeText(component.config?.label ?? component.config?.text)));
+  assert.ok(skip, 'visible keyboard skip control');
+  // generic-link cancels native hash navigation, dispatches popstate, and the runtime
+  // reinitializes with scroll-to-top. The supported button action avoids that race.
+  assert.equal(skip.type, 'button', 'skip must not enter the generic-link navigation cycle');
+  assert.equal(skip.config.type, 'button');
+  assert.equal(skip.config.href, undefined);
+  assert.equal(skip.config.ariaControls, 'main-content');
+  assert.equal(skip.eventInstructions, 'skipToMain:main-content');
+  assertDurableFocus(skip.config.classes, readJson('angora-combos.json').combos, 'skip control');
+  for (const pageId of PAGE_IDS) {
+    const main = pageComponents(pageId).find((component) => component.config?.tag === 'main');
+    assert.equal(main.config.tabindex, -1, `${pageId} programmatic focus target`);
+    assert.ok(parseFloat(main.config.styles.scrollMarginTop) >= 120, `${pageId} main clears compact sticky header`);
+    assert.equal(readJson(`${pageId}/page-config.json`).rootIds[0], skip.id, `${pageId} first keyboard control`);
+  }
+});
+
+contractTest('CONTRACT-020 keeps colored section gutters self-contained and content centered', () => {
+  const combos = readJson('angora-combos.json').combos;
+  for (const name of ['marketSection', 'marketSectionDark', 'marketSectionBright', 'marketSectionWarm']) {
+    const tokens = combos[name].join(' ').split(/\s+/);
+    assert.ok(tokens.includes('ank-display-flex'), `${name} must not depend on nested combo expansion`);
+    assert.ok(tokens.includes('ank-justifyContent-center'), `${name} centered content`);
+    assert.ok(tokens.includes('ank-paddingInline-20px'), `${name} mobile gutter`);
+    assert.ok(tokens.includes('ank-paddingInline-md-32px'), `${name} desktop gutter`);
+    assert.ok(tokens.includes('ank-boxSizing-BBX'), `${name} padding uses the supported border-box token`);
+  }
+  for (const name of ['marketContent', 'marketSplit']) {
+    assert.ok(combos[name].join(' ').includes('ank-marginInline-auto'), `${name} independently centered content`);
+  }
+});
+
+contractTest('CONTRACT-021 keeps ready video presentations bounded with a thumbnail, not a second full-size poster', () => {
+  for (const pageId of PAGE_IDS) {
+    const components = pageComponents(pageId);
+    for (const video of components.filter((component) => component.config?.tag === 'video')) {
+      assert.equal(video.config?.styles?.height, 'clamp(320px, 40vw, 480px)', `${video.id} practical responsive height`);
+      assert.equal(video.config.styles.maxHeight, '480px');
+      assert.equal(video.config.styles.objectFit, 'contain');
+      const figure = components.find((component) => component.config?.tag === 'figure' && component.config?.components?.includes(video.id));
+      const poster = components.find((component) => figure.config.components.includes(component.id) && /-poster\.webp$/.test(component.config?.src ?? ''));
+      assert.ok(poster, `${video.id} static poster remains available`);
+      assert.ok(parseFloat(poster.config?.styles?.width) <= 120 && parseFloat(poster.config.styles.height) <= 160, `${video.id} poster must be a compact thumbnail`);
+      assert.equal(poster.config.styles.objectFit, 'contain');
+      assert.equal(figure.config?.styles?.gridTemplateColumns, '96px minmax(0, 1fr)', `${video.id} thumbnail beside load label`);
+    }
+  }
+});
+
+contractTest('CONTRACT-022 gives every supplied black logo a light brand surface', () => {
+  const logos = [sharedComponents(), ...PAGE_IDS.map(pageComponents)].flat()
+    .filter((component) => component.type === 'media' && /\/logos\//.test(component.config?.src ?? ''));
+  for (const logo of logos) {
+    assert.equal(logo.config?.styles?.backgroundColor, 'var(--ank-bgColor)', `${logo.id} supplied black artwork must not disappear on green`);
+    assert.equal(logo.config.styles.objectFit, 'contain');
   }
 });

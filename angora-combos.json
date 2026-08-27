@@ -7,19 +7,19 @@
       "ank-position-fixed ank-top-8px ank-left-8px ank-zIndex-9999 ank-paddingInline-16px ank-paddingBlock-12px ank-minHeight-48px ank-display-flex ank-alignItems-center ank-bg-accentColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-borderRadius-4px focusRing"
     ],
     "siteHeader": [
-      "ank-position-sticky ank-top-0 ank-zIndex-100 ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-borderBottom-1px__solid__secondaryAccentColor ank-paddingInline-16px"
+      "ank-position-sticky ank-top-0 ank-zIndex-100 ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-borderBottom-1px__solid__secondaryAccentColor ank-paddingInline-20px ank-boxSizing-BBX"
     ],
     "headerShell": [
-      "ank-width-100per ank-maxWidth-1240px ank-minHeight-76px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-16px ank-flexWrap-wrap ank-paddingBlock-10px"
+      "ank-width-100per ank-maxWidth-1180px ank-minHeight-88px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-columnGap-12px ank-rowGap-0 ank-flexWrap-wrap ank-paddingBlock-4px"
     ],
     "brandHomeLink": [
       "ank-display-inlineFlex ank-alignItems-center ank-minHeight-48px ank-textDecoration-none ank-borderRadius-4px focusRing"
     ],
     "headerLogo": [
-      "ank-display-block ank-width-150px ank-width-md-180px ank-height-auto ank-objectFit-contain"
+      "ank-display-block ank-width-64px ank-height-64px ank-objectFit-contain"
     ],
     "siteNav": [
-      "ank-order-3 ank-order-lg-2 ank-width-100per ank-width-lg-auto ank-display-flex ank-alignItems-center ank-gap-4px ank-overflowX-auto ank-paddingBottom-6px ank-paddingBottom-lg-0"
+      "ank-order-3 ank-order-lg-2 ank-width-100per ank-width-lg-auto ank-display-flex ank-alignItems-center ank-gap-0 ank-overflowX-auto"
     ],
     "navLink": [
       "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-12px ank-color-titleColor ank-fontSize-0_9rem ank-fontWeight-800 ank-whiteSpace-nowrap ank-textDecoration-none ank-bgHover-secondaryBgColor ank-borderRadius-4px focusRing"
@@ -34,7 +34,7 @@
       "ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-titleColor ank-color-bgColor ank-paddingInline-18px ank-paddingBlock-56px"
     ],
     "footerShell": [
-      "ank-width-100per ank-maxWidth-1240px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-1fr__1fr ank-gap-28px"
+      "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-1fr__1fr ank-gap-28px"
     ],
     "footerBrand": [
       "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-10px"
@@ -58,28 +58,28 @@
       "ank-width-100per ank-minWidth-0 ank-overflowX-hidden ank-bg-bgColor ank-color-textColor"
     ],
     "marketSection": [
-      "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-18px ank-paddingBlock-68px ank-paddingBlock-md-96px"
+      "ank-width-100per ank-boxSizing-BBX ank-display-flex ank-justifyContent-center ank-paddingInline-20px ank-paddingInline-md-32px ank-paddingBlock-68px ank-paddingBlock-md-96px"
     ],
     "marketSectionDark": [
-      "marketSection ank-bg-titleColor ank-color-bgColor"
+      "ank-width-100per ank-boxSizing-BBX ank-display-flex ank-justifyContent-center ank-paddingInline-20px ank-paddingInline-md-32px ank-paddingBlock-68px ank-paddingBlock-md-96px ank-bg-titleColor ank-color-bgColor"
     ],
     "marketSectionBright": [
-      "marketSection ank-bg-secondaryAccentColor ank-color-titleColor"
+      "ank-width-100per ank-boxSizing-BBX ank-display-flex ank-justifyContent-center ank-paddingInline-20px ank-paddingInline-md-32px ank-paddingBlock-68px ank-paddingBlock-md-96px ank-bg-secondaryAccentColor ank-color-titleColor"
     ],
     "marketSectionWarm": [
-      "marketSection ank-bg-secondaryBgColor ank-color-titleColor"
+      "ank-width-100per ank-boxSizing-BBX ank-display-flex ank-justifyContent-center ank-paddingInline-20px ank-paddingInline-md-32px ank-paddingBlock-68px ank-paddingBlock-md-96px ank-bg-secondaryBgColor ank-color-titleColor"
     ],
     "marketContent": [
-      "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px"
+      "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px ank-marginInline-auto ank-minWidth-0"
     ],
     "marketSplit": [
-      "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-1fr__1fr ank-alignItems-center ank-gap-32px ank-gap-lg-56px"
+      "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-1fr__1fr ank-alignItems-center ank-gap-32px ank-gap-lg-56px ank-marginInline-auto ank-minWidth-0"
     ],
     "eyebrow": [
       "ank-m-0 ank-width-fitContent ank-color-linkColor ank-fontSize-0_78rem ank-fontWeight-900 ank-letterSpacing-0_12em ank-textTransform-uppercase"
     ],
     "displayTitle": [
-      "ank-m-0 ank-maxWidth-16ch ank-color-titleColor ank-fontSize-2_4rem ank-fontSize-md-4_6rem ank-fontWeight-900 ank-lineHeight-0_98 ank-letterSpacing-MIN0_04em"
+      "ank-m-0 ank-maxWidth-20ch ank-color-titleColor ank-fontWeight-900 ank-lineHeight-1_02 ank-letterSpacing-MIN0_04em"
     ],
     "sectionTitle": [
       "ank-m-0 ank-maxWidth-18ch ank-color-titleColor ank-fontSize-2rem ank-fontSize-md-3_2rem ank-fontWeight-900 ank-lineHeight-1_02 ank-letterSpacing-MIN0_03em"
